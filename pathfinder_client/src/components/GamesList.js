@@ -2,14 +2,19 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 const GamesList = ({ games }) => {
+   
     return (
         <div>
             {games.map( game => 
-            <div key ={game.id}>
+         
+
+            <div key ={game.id} class= "list">
             level- {game.level}
+            <br/>
            
-             hearts- {game.hearts} 
-            
+            {game.hearts} <i class="fas fa-heart" style={{color:"red"}}></i>
+           
+            <br/>
              items-{game.items} </div> 
             )}
   </div>

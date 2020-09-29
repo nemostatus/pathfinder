@@ -20,11 +20,11 @@ export default function LevelOne()  {
                </div>
                 
                <div class = "option1">
-           option 1
+           Save the damsel!
                </div>
 
                <div class = "option2">
-                   option 2
+                  Move forward into the forest.
                </div>
                </div>
             </div>

@@ -1,13 +1,15 @@
 
 import React from 'react'
+import {loseHeart} from '../gamesActions'
 
-export default function LevelOne()  {
-  
+
+ class LevelOne extends Component {
+     render(){
         return (
             <div>
 
-            <div class="situation-container">
-                <div class ="situation">
+            <div className="situation-container">
+                <div className ="situation">
                  
               <strong> You are this.username(mapstatetoprops giving this users username ) the bravest knight in the kingdom. 
                 As you are resting in your quarters, you're door is kicked in and as you go to reach for your sword, you 
@@ -19,18 +21,16 @@ export default function LevelOne()  {
                </strong>
                </div>
                 
-               <div class = "option1">
+               <div className = "option1"  >
            Save the damsel!
                </div>
 
-               <div class = "option2">
+               <div className = "option2">
                   Move forward into the forest.
                </div>
                </div>
             </div>
-
-           
-        )
-    }
-
+)
+    }}
+    export default connect(null, {loseHeart})(LevelOne)
 

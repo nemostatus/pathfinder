@@ -1,11 +1,16 @@
 import React from 'react'
 
-export default App =() => {
+
+
+const App = () => {
+   
     return (
         <div>
-            Hello me
+           jfjg
+ 
         </div>
     )
 }
 
-export default App
+
+export default App;

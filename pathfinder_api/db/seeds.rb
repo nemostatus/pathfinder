@@ -10,6 +10,6 @@
 # t.string :items
 # t.string :level
 # t.belongs_to :user, null: false, foreign_key: true
-User.create(username: 'me', password_digest:'pw')
+
 
 

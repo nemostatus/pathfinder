@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class LevelTwo extends Component {
+class Damsel extends Component {
    
 render(){
         return (
@@ -17,17 +17,17 @@ render(){
                </strong>
                </div>
                 
-              <a href="/gameOverSpider"><div className = "option1" >
+              <a href="/level/3"><div className = "option1" >
            Take the shortcut.
                </div></a> 
 
-               <div className = "option2">
+               <a href='/level/4'><div className = "option2">
                   Enter through the main entrance.
-               </div>
+               </div></a>
                </div>
             </div>
 )
     }}
     
 
-export default LevelTwo
+export default Damsel

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 
 
- class LevelOne extends Component {
+ class Castle extends Component {
    
   
 
@@ -27,13 +27,13 @@ import React, { Component } from 'react'
            Save the damsel!
                </div></a> 
 
-               <div className = "option2">
+               <a href='/level/4'><div className = "option2">
                   Move forward into the forest.
-               </div>
+               </div></a>
                </div>
             </div>
 )
     }}
     
 
-export default LevelOne
+export default Castle

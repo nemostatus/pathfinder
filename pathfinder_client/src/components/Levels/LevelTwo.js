@@ -17,7 +17,7 @@ render(){
                </strong>
                </div>
                 
-              <a href=""><div className = "option1" >
+              <a href="/gameOverSpider"><div className = "option1" >
            Take the shortcut.
                </div></a> 
 

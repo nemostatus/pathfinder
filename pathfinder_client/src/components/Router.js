@@ -12,6 +12,7 @@ import Drink from './Levels/Branch2/Drink'
 import GameOverWitch from './Levels/Branch2/GameOverWitch'
 import Save from './Levels/Branch2/Save'
 import Mist from './Levels/Branch2/Mist'
+import MountainBattle from './Levels/Branch2/MountainBattle'
 
 const Router = () => {
     return(
@@ -28,6 +29,7 @@ const Router = () => {
             <Route exact path="/level/7" component={GameOverWitch}/>
             <Route exact path="/level/8" component={Save}/>
             <Route exact path="/level/9" component={Mist}/>
+            <Route exact path="/level/10" component={MountainBattle}/>
            
             </Switch>
     )

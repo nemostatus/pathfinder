@@ -10,19 +10,22 @@ class Save extends Component {
                 <div className ="situation">
                  
               <strong> 
+                  You thank the old man, then you leave thinking of how long a day it's been. You stop to rest
+                  for a while. In the distance you see smoke rolling from one end of the forest. You take off on your horse but 
+                  you are soon surrounded by a mysterious mist. As it clears you find yourself at a fork in the road. 
                   
                   </strong>
                </div>
                 
-              <a href="/level/6">
+              <a href="/level/9">
                   <div className = "option1" >
-           
+           Take left path.
                </div></a> 
 
-               <a href='/level/'>
+               <a href='/level/9'>
                    <div className = "option2">
-          
-               </div></a>
+                       Take right path.
+          </div></a>
                </div>
             </div>
 )

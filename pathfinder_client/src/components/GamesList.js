@@ -6,11 +6,7 @@ import { useHistory } from "react-router"
   
   
 const GamesList = ({ games }) => {
-    let history = useHistory()
 
-    function handleClick() {
-      history.push("/testing")
-    }
     
  return (
        
@@ -18,7 +14,7 @@ const GamesList = ({ games }) => {
             {games.map( game => 
          
         
-            <div key ={game.id} className= "list" onClick={handleClick} >
+            <div key ={game.id} className= "list">
             level- {game.level}
             <br/>
            

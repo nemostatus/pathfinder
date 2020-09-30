@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { useHistory } from "react-router"
+
 
 
  class LevelOne extends Component {
@@ -23,9 +23,9 @@ import { useHistory } from "react-router"
                </strong>
                </div>
                 
-               <div className = "option1" >
+              <a href="/level/2"><div className = "option1" >
            Save the damsel!
-               </div>
+               </div></a> 
 
                <div className = "option2">
                   Move forward into the forest.

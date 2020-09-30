@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 
 import {fetchGames} from '../actions/gamesActions'
-import {loseHeart} from '../actions/gamesActions'
+
 
 
 

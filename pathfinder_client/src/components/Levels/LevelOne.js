@@ -1,9 +1,11 @@
-
-import React from 'react'
-import {loseHeart} from '../gamesActions'
+import React, { Component } from 'react'
+import { useHistory } from "react-router"
 
 
  class LevelOne extends Component {
+   
+  
+
      render(){
         return (
             <div>
@@ -21,7 +23,7 @@ import {loseHeart} from '../gamesActions'
                </strong>
                </div>
                 
-               <div className = "option1"  >
+               <div className = "option1" >
            Save the damsel!
                </div>
 
@@ -32,5 +34,6 @@ import {loseHeart} from '../gamesActions'
             </div>
 )
     }}
-    export default connect(null, {loseHeart})(LevelOne)
+    
 
+export default LevelOne

@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-
-
-
- class Castle extends Component {
+//this will be done in gamesactions 
+//starting the game should make a POST request creating a new game with the users_id or user.id handles rails
+//this action should also update redux state
+// this will be done when create new game button is clicked which will be somewhere
+//some divs in these componenets will update state so some will need state and others wont they will event handlers
+//oonclick handlers getting actions from mapdispatch to props
+class Castle extends Component {
    
-  
-
-     render(){
+ render(){
         return (
             <div>
 

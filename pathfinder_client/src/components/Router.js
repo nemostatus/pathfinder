@@ -13,12 +13,13 @@ import GameOverWitch from './Levels/Branch2/GameOverWitch'
 import Save from './Levels/Branch2/Save'
 import Mist from './Levels/Branch2/Mist'
 import MountainBattle from './Levels/Branch2/MountainBattle'
+import DashBoard from './components/DashBoard'
 
 const Router = () => {
     return(
         <Switch>
             <Route exact path="/" component={Usersform}/>
-            <Route exact path="/about" component={About}/>
+            <Route exact path="/dashboard" component={DashBoard}/>
             <Route exact path="/games" component={GamesList}/>
             <Route exact path="/level/1" component={Castle}/>
             <Route exact path="/level/2" component={Damsel}/>

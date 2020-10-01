@@ -1,7 +1,7 @@
 import React from 'react'
 import {Switch,Route} from 'react-router-dom'
 import Usersform from './Usersform'
-import About from './About'
+
 import GamesList from './GamesList'
 import Castle from './Levels/Castle'
 import Damsel from './Levels/Branch1/Damsel'
@@ -13,12 +13,14 @@ import GameOverWitch from './Levels/Branch2/GameOverWitch'
 import Save from './Levels/Branch2/Save'
 import Mist from './Levels/Branch2/Mist'
 import MountainBattle from './Levels/Branch2/MountainBattle'
-import DashBoard from './components/DashBoard'
+import DashBoard from './DashBoard'
+import Home from './Home'
 
 const Router = () => {
     return(
         <Switch>
             <Route exact path="/" component={Usersform}/>
+            <Route exact path="/home" component={Home}/>
             <Route exact path="/dashboard" component={DashBoard}/>
             <Route exact path="/games" component={GamesList}/>
             <Route exact path="/level/1" component={Castle}/>

@@ -12,8 +12,7 @@ import React, { Component } from 'react'
                 <div className ="situation">
                  
               <strong> 
-                  You charge swiftly into the forest passed the damsel and feel bad you couldn't help but you realize the 
-                  princess is in danger. As you travel faster trying to leave the past in the past you see a figure far 
+                  You charge swiftly into the forest  As you travel faster trying to leave the past in the past you see a figure far 
                   in the distance sitting on a log. As you move closer you see it's an unsettling looking old man. He has
                   bloodshot, almost purely red eyes and calls out to you, saying "help me" in a chilling voice as
                   if the voice was resonating from inside your own head. 

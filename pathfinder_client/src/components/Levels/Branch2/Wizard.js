@@ -24,7 +24,7 @@ class Wizard extends Component {
             Drink Potion!
                </div></a> 
 
-               <a href='/level/'>
+               <a href='/level/8'>
                    <div className = "option2">
             Save Potion.
                </div></a>

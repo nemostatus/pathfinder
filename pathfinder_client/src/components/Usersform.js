@@ -5,7 +5,9 @@ import { addUser } from '../actions/usersActions'
 class Usersform extends Component {
 
     state = {
-        username: ''
+        username: '',
+        password: '',
+        password_confirmation: ''
     }
 
 
@@ -27,6 +29,12 @@ class Usersform extends Component {
                 <form onSubmit = {this.handleSubmit}>
                     <label>Name:</label>
                     <input type="text" value ={this.state.username} onChange={this.handleChange} name="username"></input>
+                    <br/>
+            
+                    <input type="text" value ={this.state.password} onChange={this.handleChange} name="password"></input>
+                    <br/>
+            
+                    <input type="text" value ={this.state.password_confirmation} onChange={this.handleChange} name="password_confirmation"></input>
                     <br/>
             
                     <input type="submit" value="create user"></input>

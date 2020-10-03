@@ -6,7 +6,8 @@ import { addGame } from '../actions/gamesActions'
       
     state = {
         hearts:5,
-        items: 'horse'
+        items: 'horse',
+        level: 'lvl'
     }
 
     handleClick =  e => {

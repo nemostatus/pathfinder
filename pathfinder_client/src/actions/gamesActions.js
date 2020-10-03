@@ -27,13 +27,13 @@ export const loseHeart = game => {
     return dispatch => {
 fetch('http://127.0.0.1:3001/games', {
 method: 'POST',
-withCredentials: true,
+
 body: JSON.stringify(game),
 headers: {'Content-Type': 'application/json'}
 })
     .then(resp => resp.json())
-    .then(user => dispatch({type: 'ADD_Game', payload: game}))
-    .then()
+    .then(user => dispatch({type: 'ADD_GAME', payload: game}))
+    
     }
 }
 

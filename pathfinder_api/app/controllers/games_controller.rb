@@ -3,7 +3,8 @@ class GamesController < ApplicationController
 
   # GET /games
   def index
-    @games = Game.all
+    @user = User.find(params[:user_id])
+    @games = @user.games
 
     render json: @games
   end

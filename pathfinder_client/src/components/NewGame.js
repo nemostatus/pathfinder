@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import { addGame } from '../actions/gamesActions'
+import ls from 'local-storage'
 
  class NewGame extends Component {
-      
+    
+             
+    
     state = {
         hearts:5,
         items: 'horse',
-        level: 'lvl'
-    }
+        user_id: ls.get('user_id')
+        }
 
     handleClick =  e => {
       e.preventDefault()

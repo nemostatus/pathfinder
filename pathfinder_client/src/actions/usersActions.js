@@ -1,3 +1,4 @@
+import ls from 'local-storage'
 export const addUser = user => {
     return dispatch => {
 fetch('http://127.0.0.1:3001/users', {
@@ -10,7 +11,7 @@ headers: {'Content-Type': 'application/json'}
     })
     .then(resp => resp.json())
     .then(user => dispatch({type: 'ADD_USER', payload: user}))
-
+       .then(user => ls.set('user_id', user.payload.id))
     }
 }
 

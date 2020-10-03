@@ -16,11 +16,13 @@ import MountainBattle from './Levels/Branch2/MountainBattle'
 import DashBoard from './DashBoard'
 import Home from './Home'
 import NewGame from './NewGame'
+import Registration from './Registration'
 
 const Router = () => {
     return(
         <Switch>
             <Route exact path="/" component={Castle}/>
+             <Route exact path="/registration" component={Registration}/>
             <Route exact path="/home" component={Home}/>
             <Route exact path="/dashboard" component={DashBoard}/>
             <Route exact path="/games" component={GamesList}/>

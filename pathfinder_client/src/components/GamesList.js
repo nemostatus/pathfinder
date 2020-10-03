@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 
 
 
+
   
   
 const GamesList = ({ games }) => {
@@ -11,6 +12,7 @@ const GamesList = ({ games }) => {
  return (
        
         <div >
+         
             {games.map( game => 
          
         

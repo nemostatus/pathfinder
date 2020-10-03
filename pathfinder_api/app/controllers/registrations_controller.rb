@@ -3,7 +3,7 @@ class RegistrationsController < ApplicationController
         user = User.create!(
             username: params['user']['username'], 
             password: params['user']['password'],
-            password_confirmation['user']['password_confirmation']
+            password_confirmation: params['user']['password_confirmation']
         )
 
         if user

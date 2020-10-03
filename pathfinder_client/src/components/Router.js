@@ -1,6 +1,6 @@
 import React from 'react'
 import {Switch,Route} from 'react-router-dom'
-import Usersform from './Usersform'
+
 
 import GamesList from './GamesList'
 import Castle from './Levels/Castle'
@@ -15,11 +15,12 @@ import Mist from './Levels/Branch2/Mist'
 import MountainBattle from './Levels/Branch2/MountainBattle'
 import DashBoard from './DashBoard'
 import Home from './Home'
+import NewGame from './NewGame'
 
 const Router = () => {
     return(
         <Switch>
-            <Route exact path="/" component={Usersform}/>
+            <Route exact path="/" component={Castle}/>
             <Route exact path="/home" component={Home}/>
             <Route exact path="/dashboard" component={DashBoard}/>
             <Route exact path="/games" component={GamesList}/>
@@ -33,6 +34,7 @@ const Router = () => {
             <Route exact path="/level/8" component={Save}/>
             <Route exact path="/level/9" component={Mist}/>
             <Route exact path="/level/10" component={MountainBattle}/>
+            <Route exact path="/newgame" component= {NewGame}/>
            
             </Switch>
     )

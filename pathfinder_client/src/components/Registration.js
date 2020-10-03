@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import { addUser } from '../actions/usersActions'
+import { withRouter} from 'react-router'
 
-class Usersform extends Component {
+class Registration extends Component {
 
     state = {
         username: '',
@@ -21,19 +22,21 @@ class Usersform extends Component {
     handleSubmit = e => {
         e.preventDefault()
         this.props.addUser(this.state)
+        this.props.history.push('/games')
     }
     render() {
 
         return (
             <div>
+                <h1> Sign Up </h1>
                 <form onSubmit = {this.handleSubmit}>
                     <label>Name:</label>
                     <input type="text" value ={this.state.username} onChange={this.handleChange} name="username"></input>
                     <br/>
-            
+                    <label>Password:</label>
                     <input type="text" value ={this.state.password} onChange={this.handleChange} name="password"></input>
                     <br/>
-            
+                    <label>Password Confirmation:</label>
                     <input type="text" value ={this.state.password_confirmation} onChange={this.handleChange} name="password_confirmation"></input>
                     <br/>
             
@@ -46,6 +49,6 @@ class Usersform extends Component {
     }
 }
 
-export default connect(null, {addUser})(Usersform)
+export default withRouter(connect(null, {addUser})(Registration))
 
 

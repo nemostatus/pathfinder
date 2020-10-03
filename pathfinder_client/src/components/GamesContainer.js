@@ -18,13 +18,25 @@ import {fetchGames} from '../actions/gamesActions'
             <div>
                
                 Games Container
+                
+            {this.props.user.map( user => 
+         
+        
+            <div key ={user.id} className= "list">
+            user - {user.username}
+            
+            
             </div>
-        )
-    }
+           
+            
+           )}
+ </div>)}}
+const mapStateToProps = state => {
+    return { user: state.users}
 }
 
 
 
-export default connect(null, { fetchGames})(GamesContainer);
+export default connect(mapStateToProps, { fetchGames})(GamesContainer);
 
 

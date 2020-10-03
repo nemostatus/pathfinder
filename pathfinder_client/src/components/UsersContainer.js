@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Usersform from './Usersform'
+import Usersform from './Registration'
 export class UsersContainer extends Component {
 
 render() {

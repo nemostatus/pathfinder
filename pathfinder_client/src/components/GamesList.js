@@ -3,12 +3,14 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
 
+
 const GamesList = ({ games }) => {
 
    
  return (
-       
+   
         <div >
+    
          <h1> Click heart to load file </h1>
             {games.map( game => 
          

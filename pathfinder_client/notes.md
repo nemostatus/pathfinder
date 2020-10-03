@@ -21,3 +21,17 @@ ok so hows this working i have the rails db, this will persist any changes due t
 options 
 this is tricky
 if localstorage isnt allowed, checkout redux persist
+
+
+
+GOALS
+----------------------------------------
+1. Creating login form so once a user is registered they can find their acct and see their games A
+2. make sure localstorage is ok to use compared to redux persist library B
+3. Think of how you can make this app more dynamic C
+4. Add backgrounds to pages G
+5. Think of how to add actions, persist state, change game in db with PUT request D
+6. turned based boss battle system E boss fight component?
+7. if hearts gone, show game over screen F
+8. make items and array, if item exists more or less options
+9. be realistic with time and set priorities like ensuring requirements are met and code is solid so ill do that now alphabetically *

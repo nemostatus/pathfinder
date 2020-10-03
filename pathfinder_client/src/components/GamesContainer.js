@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-
+import NewGame from  './NewGame'
 import {fetchGames} from '../actions/gamesActions'
 
 
@@ -16,7 +16,7 @@ import {fetchGames} from '../actions/gamesActions'
     render() {
         return (
             <div>
-               
+               <NewGame/>
                 Games Container
                 
             {this.props.user.map( user => 

@@ -25,9 +25,10 @@ export const loseHeart = game => {
         .then(game => dispatch({type: 'LOSE_HEART', payload: game}))
     }}
 
+
     export const addGame = game => {
     return dispatch => {
-fetch('http://127.0.0.1:3001/games', {
+  fetch(`http://127.0.0.1:3001/users/${ls.get('user_id')}/games`,{
 method: 'POST',
 withCredentials: true,
 body: JSON.stringify(game),

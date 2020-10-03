@@ -16,7 +16,8 @@ class GamesController < ApplicationController
 
   # POST /games
   def create
-    @game = Game.new(game_params)
+       @user = User.find(params[:user_id])
+    @game = @user.games.build(game_params)
 
     if @game.save
       render json: @game, status: :created, location: @game
@@ -41,9 +42,7 @@ class GamesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_game
-      @game = Game.find(params[:id])
-    end
+    
 
     # Only allow a trusted parameter "white list" through.
     def game_params

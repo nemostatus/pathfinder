@@ -9,7 +9,7 @@ const GamesList = ({ games }) => {
  return (
        
         <div >
-         <h1> Choose a file </h1>
+         <h1> Click heart to load file </h1>
             {games.map( game => 
          
             
@@ -18,7 +18,7 @@ const GamesList = ({ games }) => {
             level- {game.level}
             <br/>
            
-          <Link to= {`/games/${game.id}`}> {game.hearts} <i className="fas fa-heart" style={{color:"red"}}></i> </Link>
+          {game.hearts}<Link to= {`/level/${game.level}`}>  <i className="fas fa-heart" style={{color:"red"}}></i> </Link>
            
             <br/>
              items-{game.items} 

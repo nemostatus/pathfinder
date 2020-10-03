@@ -1,3 +1,5 @@
+import ls from 'local-storage'
+
 export const fetchGames = () => {
     return dispatch => {
         fetch(`http://127.0.0.1:3001/games`)
@@ -27,12 +29,13 @@ export const loseHeart = game => {
     return dispatch => {
 fetch('http://127.0.0.1:3001/games', {
 method: 'POST',
-
+withCredentials: true,
 body: JSON.stringify(game),
 headers: {'Content-Type': 'application/json'}
 })
     .then(resp => resp.json())
-    .then(user => dispatch({type: 'ADD_GAME', payload: game}))
+    .then(game => dispatch({type: 'ADD_GAME', payload: game}))
+    .then(game => ls.set('game', game))
     
     }
 }

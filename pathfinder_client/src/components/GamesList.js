@@ -1,25 +1,28 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
+
 
 const GamesList = ({ games }) => {
 
-    
+   
  return (
        
         <div >
-         
+         <h1> Choose a file </h1>
             {games.map( game => 
          
-        
-            <div key ={game.id} className= "list">
+            
+            
+               <div key ={game.id} className= "list" >
             level- {game.level}
             <br/>
            
-            {game.hearts} <i className="fas fa-heart" style={{color:"red"}}></i>
+          <Link to= {`/games/${game.id}`}> {game.hearts} <i className="fas fa-heart" style={{color:"red"}}></i> </Link>
            
             <br/>
              items-{game.items} 
-            
+      
              </div>
            
             

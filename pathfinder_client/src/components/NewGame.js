@@ -8,6 +8,7 @@ import ls from 'local-storage'
              
     
     state = {
+        level:1,
         hearts:5,
         items: 'horse',
         user_id: ls.get('user_id')

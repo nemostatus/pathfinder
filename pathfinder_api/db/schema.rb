@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_03_122606) do
+ActiveRecord::Schema.define(version: 2020_10_03_140344) do
 
   create_table "games", force: :cascade do |t|
     t.integer "hearts"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_10_03_122606) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "items"
     t.string "user_id"
+    t.string "level"
   end
 
   create_table "users", force: :cascade do |t|

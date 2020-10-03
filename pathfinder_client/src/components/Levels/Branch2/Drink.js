@@ -22,7 +22,7 @@ class Drink extends Component {
              Run into the cave.
                </div></a> 
 
-               <a href='/level/1'><div className = "option2">
+               <a href='/level/10'><div className = "option2">
                  Climb to the top of mountain.
                </div></a>
                </div>

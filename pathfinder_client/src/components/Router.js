@@ -13,7 +13,7 @@ import GameOverWitch from './Levels/Branch2/GameOverWitch'
 import Save from './Levels/Branch2/Save'
 import Mist from './Levels/Branch2/Mist'
 import MountainBattle from './Levels/Branch2/MountainBattle'
-import DashBoard from './DashBoard'
+import Dragon from './Levels/Branch2/Dragon'
 import Home from './Home'
 import NewGame from './NewGame'
 import Registration from './Registration'
@@ -24,7 +24,7 @@ const Router = () => {
             <Route exact path="/" component={Castle}/>
              <Route exact path="/registration" component={Registration}/>
             <Route exact path="/home" component={Home}/>
-            <Route exact path="/dashboard" component={DashBoard}/>
+          
             <Route exact path="/games" component={GamesList}/>
             <Route exact path="/level/1" component={Castle}/>
             <Route exact path="/level/2" component={Damsel}/>
@@ -36,6 +36,7 @@ const Router = () => {
             <Route exact path="/level/8" component={Save}/>
             <Route exact path="/level/9" component={Mist}/>
             <Route exact path="/level/10" component={MountainBattle}/>
+            <Route exact peth ="/level/14" component={Dragon}/>
             <Route exact path="/newgame" component= {NewGame}/>
            
             </Switch>

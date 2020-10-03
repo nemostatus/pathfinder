@@ -18,6 +18,7 @@ class MountainBattle extends Component {
                her to wander these mountains small and afraid." "That's enough!"
                </strong>
                </div>
+               {/* </div>
                 
               <a href="/level/11"><div className = "option1" >
                 Pick up the princess and run. rundeath run in place forever
@@ -32,7 +33,8 @@ class MountainBattle extends Component {
                </div></a>
                <a href='/level/14'><div className = "option2">
                  Throw a rock at the witch.
-               </div></a>
+               </div></a> */}
+               Turned based battle system here
                </div>
             </div>
 )

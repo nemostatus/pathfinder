@@ -23,9 +23,9 @@ import React, { Component } from 'react'
                Help the old man.
                </div></a> 
 
-             <div className = "option2">
-                  Ride passed the old man and head to the mountains.
-               </div>
+             <a href="/level/14"><div className = "option2">
+                  Move passed the old man and head to the mountains.
+               </div></a>
                </div>
             </div>
 )

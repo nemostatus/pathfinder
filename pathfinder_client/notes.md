@@ -8,11 +8,16 @@
 //clicking on a game should fetch that specific game by it's id and set the redux state to that, idk, I'll need to experiemnt
 //with this and research the proper way
 Users
-When a user is created it should store a session? in rails? in react?
+
 Goals
-create user form
+
 
 
 would be nice section
 adding more icons on screen
 not priority but adding background pics for each scenario
+
+ok so hows this working i have the rails db, this will persist any changes due to actions triggered  on click  events,figure out how i want to display current game info which part of app is responsible for that...
+options 
+this is tricky
+if localstorage isnt allowed, checkout redux persist

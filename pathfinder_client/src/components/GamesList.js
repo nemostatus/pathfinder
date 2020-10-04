@@ -11,7 +11,7 @@ const GamesList = ({ games }) => {
    
         <div >
     
-         <h1> Click heart to load file </h1>
+         <h1> Click to load file </h1>
             {games.map( game => 
          
             

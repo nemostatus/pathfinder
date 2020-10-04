@@ -17,6 +17,7 @@ import Dragon from './Levels/Branch2/Dragon'
 import Home from './Home'
 import NewGame from './NewGame'
 import Registration from './Registration'
+import StoryBoard from './StoryBoard'
 
 const Router = () => {
     return(
@@ -24,6 +25,7 @@ const Router = () => {
             <Route exact path="/" component={Castle}/>
              <Route exact path="/registration" component={Registration}/>
             <Route exact path="/home" component={Home}/>
+            <Route exact path="/storyboard" component={StoryBoard}/>
           
             <Route exact path="/games" component={GamesList}/>
             <Route exact path="/level/1" component={Castle}/>

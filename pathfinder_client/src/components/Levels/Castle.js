@@ -6,7 +6,7 @@ class Castle extends Component {
         return (
             <div>
 
-            <div className="situation-container">
+            {/* <div className="situation-container">
                 <div className ="situation">
                  
               <strong> You are this.username(mapstatetoprops giving this users username ) the bravest knight in the kingdom. 
@@ -18,7 +18,7 @@ class Castle extends Component {
                in distress being attacked by some goblins!
                </strong>
                </div>
-                
+                 */}
               <a href="/level/2"><div className = "option1" >
            Save the damsel!
                </div></a> 
@@ -27,7 +27,7 @@ class Castle extends Component {
                   Move forward into the forest.
                </div></a>
                </div>
-            </div>
+           
 )
     }}
     

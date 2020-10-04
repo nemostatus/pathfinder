@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import ls from 'local-storage'
+import {connect} from 'react-redux'
 
-export default class StoryBoard extends Component {
+
+
+ class StoryBoard extends Component {
     state = {
+        id: ls.get('game_id'),
         level: 1,
         hearts: 5,
         items: 'horse',
@@ -38,8 +42,7 @@ export default class StoryBoard extends Component {
              {this.state.choice2}
                </div>
                </div>
-                
-     
-        )
+  )
     }
 }
+export default connect(null, null)(StoryBoard)

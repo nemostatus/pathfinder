@@ -1,10 +1,12 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
+import ls from 'local-storage'
 
 
 
 const GamesList = ({ games }) => {
+
 
    
  return (
@@ -16,7 +18,7 @@ const GamesList = ({ games }) => {
          
             
             
-               <div key ={game.id} className= "list" >
+               <div key ={game.id} className= "list" onClick={() => ls.set('game_id', game.id)} >
             level- {game.level}
             <br/>
            

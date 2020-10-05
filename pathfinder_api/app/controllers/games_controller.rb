@@ -11,6 +11,9 @@ class GamesController < ApplicationController
 
   # GET /games/1
   def show
+    @user = User.find(params[:user_id])
+    @game = @user.games.find(params[:id])
+
     render json: @game
   end
 
@@ -26,8 +29,11 @@ class GamesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /games/1
+  # PATCH/PUT users/user_id/games/id
   def update
+    @user = User.find(params[:user_id])
+    @game = @user.games.find(params[:id])
+
     if @game.update(game_params)
       render json: @game
     else

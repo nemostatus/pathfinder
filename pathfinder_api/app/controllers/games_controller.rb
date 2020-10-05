@@ -20,7 +20,7 @@ class GamesController < ApplicationController
     @game = @user.games.build(game_params)
 
     if @game.save
-      render json: @game, status: :created, location: @game
+       render json: @game #status: :created, location: @game
     else
       render json: @game.errors, status: :unprocessable_entity
     end

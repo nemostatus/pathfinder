@@ -14,8 +14,8 @@ import ls from 'local-storage'
         user_id: ls.get('user_id')
         }
 
-    handleClick =  e => {
-      e.preventDefault()
+    handleClick =  () => {
+     
         this.props.addGame(this.state)
 
     }

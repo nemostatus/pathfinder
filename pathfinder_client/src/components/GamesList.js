@@ -18,20 +18,21 @@ const GamesList = ({ games }) => {
          
             
             
-               <div key ={game.id} className= "list" onClick={() => ls.set('game_id', game.id)} >
+         <Link to= {'/storyboard'}> <div key ={game.id} className= "list" onClick={() => ls.set('game_id', game.id)} >
             level- {game.level}
             <br/>
            
-          {game.hearts}<Link to= {`/level/${game.level}`}>  <i className="fas fa-heart" style={{color:"red"}}></i> </Link>
-           
+          {game.hearts}<i className="fas fa-heart" style={{color:"red"}}></i> 
             <br/>
              items-{game.items} 
       
              </div>
-           
+             </Link>
             
             )}
   </div>
+ 
+           
  
     )
 }

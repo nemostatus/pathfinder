@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: [:show, :update, :destroy]
+  
 
   # GET /games
   def index
@@ -46,6 +46,6 @@ class GamesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def game_params
-      params.require(:game).permit(:hearts, :choice1, choice2, :prompt, :user_id, :level)
+      params.require(:game).permit(:hearts, :choice1, :choice2, :prompt, :user_id, :level)
     end
 end

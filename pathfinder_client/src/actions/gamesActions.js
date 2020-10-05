@@ -28,7 +28,7 @@ export const loseHeart = game => {
 
     export const addGame = game => {
     return dispatch => {
-  fetch(`http://127.0.0.1:3001/users/${ls.get('user_id')}/games`,{
+  fetch(`http://127.0.0.1:3001/users/${game.user_id}/games`,{
 method: 'POST',
 withCredentials: true,
 body: JSON.stringify(game),
@@ -44,20 +44,25 @@ headers: {'Content-Type': 'application/json'}
 
 export const goblinAttack = game => {
     return dispatch => {
-        fetch(`http://127.0.0.1:3001/games/${game.id}`,{
+        fetch(`http://127.0.0.1:3001/users/${game.user_id}/games/${game.id}`,{
          method: "PUT",
             headers: {
               Accept: "application/json",
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-            hearts: game.hearts - 1,})
+            hearts: game.hearts,
+            level: game.level,
+            prompt: game.prompt,
+            choice1: game.choice1,
+            choice2: game.choice2
+       })
             }
             )
         .then(resp => resp.json())
-        .then(game => dispatch({type: 'LOSE_HEART', payload: game}))
-    }}
-
+        .then(game => console.log(game))
+    }
+}
 
 
 

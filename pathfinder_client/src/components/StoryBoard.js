@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ls from 'local-storage'
 import {connect} from 'react-redux'
+import {goblinAttack} from '../actions/gamesActions'
 
 
 
@@ -10,7 +11,7 @@ import {connect} from 'react-redux'
         id: ls.get('game_id'), //getting the level by its id to be used for rails requests
         level: "1", //the current level changed with onclick events
         hearts: 5,
-        items: 'horse',
+
         user_id: ls.get('user_id'),
         choice1: 'Save the damsel!',
         choice2: ' Move forward into the forest.',
@@ -27,7 +28,9 @@ import {connect} from 'react-redux'
      //have a case statement that will setState, invoke an action based on this.state.level and event.value
     
      const level = this.state.level
-     if(event.target.id === "option1" && level === "1" ) //lose 2 hearts, change level to 2, change prompt and choice1,2
+     if(event.target.id === "option1" && level === "1" ) {
+     //lose 2 hearts, change level to 2, change prompt and choice1,2
+     this.props.goblinAttack(this.state)
      this.setState({
          prompt: 'After you put up a brave and furious struggle against the goblins you grow more and more weary and \
          your vision grows blurry from exhaustion. As you defeat the last goblin you check on the damsel. \
@@ -35,10 +38,11 @@ import {connect} from 'react-redux'
          You wake up to find your sword and horse have been taken and the goblins are gone! You continue toward \
          the forest to see 2 paths. One looks like the main entrance and another is a strange looking shortcut.',
         choice1:  'Take the shortcut.',
-        choice2: 'Enter through the main entrance.'
-    
-
-     })
+        choice2: 'Enter through the main entrance.',
+        level:"2",
+        hearts: 3
+    })
+}
      else if(   event.target.id === "option2" && level === "1" ){
         this.setState({
             prompt:   'You charge swiftly into the forest  As you travel faster trying to leave the past in the past you see a figure far\
@@ -74,7 +78,7 @@ import {connect} from 'react-redux'
            {/* <button value = "a" onClick={this.handleClick(this.state.level)}>Choose this</button> */}
                </div>
 
-             <div className = "option2">
+             <div id= "option2" className = "option2" onClick={this.handleClick} >
              {this.state.choice2}
              {/* ' Move forward into the forest.' */}
            
@@ -83,4 +87,4 @@ import {connect} from 'react-redux'
   )
     }
 }
-export default connect(null, null)(StoryBoard)
+export default connect(null, {goblinAttack})(StoryBoard)

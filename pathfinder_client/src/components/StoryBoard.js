@@ -30,7 +30,7 @@ import {goblinAttack} from '../actions/gamesActions'
      const level = this.state.level
      if(event.target.id === "option1" && level === "1" ) {
      //lose 2 hearts, change level to 2, change prompt and choice1,2
-     this.props.goblinAttack(this.state)
+   
      this.setState({
          prompt: 'After you put up a brave and furious struggle against the goblins you grow more and more weary and \
          your vision grows blurry from exhaustion. As you defeat the last goblin you check on the damsel. \
@@ -41,9 +41,11 @@ import {goblinAttack} from '../actions/gamesActions'
         choice2: 'Enter through the main entrance.',
         level:"2",
         hearts: 3
-    })
+    }, () => { this.props.goblinAttack(this.state)})
+
+               
 }
-     else if(   event.target.id === "option2" && level === "1" ){
+     else if(event.target.id === "option2" && level === "1" ){
         this.setState({
             prompt:   'You charge swiftly into the forest  As you travel faster trying to leave the past in the past you see a figure far\
             in the distance sitting on a log. As you move closer you see its an unsettling looking old man. He has \
@@ -58,6 +60,8 @@ import {goblinAttack} from '../actions/gamesActions'
      //send this state to an action that will update the current game
 
         }
+
+       
     render() {
         return (
             

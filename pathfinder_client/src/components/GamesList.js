@@ -38,7 +38,7 @@ const GamesList = ({ games }) => {
 }
 
 const mapStateToProps = state => {
-    return { games: state.games }
+    return { games: state.games  }
 }
 
 export default connect(mapStateToProps)(GamesList)

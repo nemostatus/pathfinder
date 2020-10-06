@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ls from 'local-storage'
 import {connect} from 'react-redux'
 import {goblinAttack} from '../actions/gamesActions'
+import {choices} from '../choices'
 
 
 
@@ -25,31 +26,16 @@ import {goblinAttack} from '../actions/gamesActions'
      if(event.target.id === "option1" && level === "1" ) {
      //lose 2 hearts, change level to 2, change prompt and choice1,2
    
-     this.setState({
-         prompt: 'After you put up a brave and furious struggle against the goblins you grow more and more weary and \
-         your vision grows blurry from exhaustion. As you defeat the last goblin you check on the damsel. \
-         "You foolish knight!" She shrieks. The damsel turns to reveal herself as a goblin and knocks you out with a club.\
-         You wake up to find your sword and horse have been taken and the goblins are gone! You continue toward \
-         the forest to see 2 paths. One looks like the main entrance and another is a strange looking shortcut.',
-        choice1:  'Take the shortcut.',
-        choice2: 'Enter through the main entrance.',
-        level:"2",
-        hearts: 3
-    }, () => { this.props.goblinAttack(this.state)})
+     this.setState(choices, () => { this.props.goblinAttack(this.state)})
 
                
 }
      else if(event.target.id === "option2" && level === "1" ){
-        this.setState({
-            prompt:   'You charge swiftly into the forest  As you travel faster trying to leave the past in the past you see a figure far\
-            in the distance sitting on a log. As you move closer you see its an unsettling looking old man. He has \
-            bloodshot almost purely red eyes and calls out to you, saying "help me" in a chilling voice as\
-            if the voice was resonating from inside your own head.',
-           choice1:  'Help the old man.',
-           choice2: '  Move passed the old man and head to the mountains.'
+        this.setState(
+       choices
        
    
-        })
+        )
      }
      //send this state to an action that will update the current game
 

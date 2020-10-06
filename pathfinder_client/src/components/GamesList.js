@@ -18,7 +18,7 @@ const GamesList = ({ games }) => {
          
             
             
-         <Link to= {'/storyboard'}> <div key ={game.id} className= "list" onClick={() => ls.set('game_id', game.id)} >
+         <Link to= {'/storyboard'} key={game.id}> <div className= "list" onClick={() => ls.set('game', game)} >
             level- {game.level}
             <br/>
            

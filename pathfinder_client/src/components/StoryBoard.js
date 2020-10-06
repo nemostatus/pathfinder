@@ -8,20 +8,14 @@ import {goblinAttack} from '../actions/gamesActions'
  class StoryBoard extends Component {
         
        state = {
-        id: ls.get('game_id'), //getting the level by its id to be used for rails requests
-        level: "1", //the current level changed with onclick events
-        hearts: 5,
+        id: ls.get('game')["id"], //getting the level by its id to be used for rails requests
+        level: ls.get('game')["level"], //the current level changed with onclick events
+        hearts: ls.get('game')["hearts"],
 
         user_id: ls.get('user_id'),
-        choice1: 'Save the damsel!',
-        choice2: ' Move forward into the forest.',
-        prompt: 'You are this.username(mapstatetoprops giving this users username ) the bravest knight in the kingdom. \
-        As you are resting in your quarters, youre door is kicked in and as you go to reach for your sword you  \
-        recognize these intruders as royal guards. "You must come with us (this.username), the king has demanded \
-        your assistance at once." You ride out on your horse to the castle. As soon as you enter the king shouts \
-        furiously, "(this.username)! Princess Redux is missing! Some of my guards believe she was taken sometime \
-       last night! You must save her. Or it will be your head!" As you ride out towards the forest you see a damsel \
-       in distress being attacked by some goblins!'
+        choice1: ls.get('game')["choice1"],
+        choice2: ls.get('game')["choice2"],
+        prompt: ls.get('game')["prompt"]
         }
         handleClick = ( event) => {
      // take in the current level so when invoked it will be 

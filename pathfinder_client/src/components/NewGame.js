@@ -9,7 +9,7 @@ import ls from 'local-storage'
     
     state = {
      
-        level: "1", //the current level changed with onclick events
+        level: "Asteroid Belt", //the current level changed with onclick events
         hearts: 5,
 
         user_id: ls.get('user_id'),

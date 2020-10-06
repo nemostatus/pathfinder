@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import ls from 'local-storage'
 import {connect} from 'react-redux'
 import {setGame} from '../actions/gamesActions'
-import {level1ChoiceABelt} from '../choices'
-import {level1ChoiceBBelt} from '../choices'
+import {level1ChoiceAManuever} from '../choices'
+import {level1ChoiceBBeam} from '../choices'
 
 
 
@@ -26,16 +26,19 @@ import {level1ChoiceBBelt} from '../choices'
      const level = this.state.level
      if(event.target.id === "option1" && level === "1" ) {
      //lose 2 hearts, change level to 2, change prompt and choice1,2
-   
-     this.setState(level1ChoiceABelt, () => { this.props.setGame(this.state)})
-
-               
-}
+   this.setState(level1ChoiceAManuever, () => { this.props.setGame(this.state)}) // manuever
+    }
      else if(event.target.id === "option2" && level === "1" ){
-       
-      
-        this.setState(level1ChoiceBBelt, () => { this.props.setGame(this.state)})
+    this.setState(level1ChoiceBBeam, () => { this.props.setGame(this.state)}) //beam
+
      }
+      // end  of level 1 //////////////////////
+     else if(event.target.id === "option1" && level === "2" ) {
+       this.setState(level2ChoiceAManuever, () => { this.props.setGame(this.state)})
+  }
+        else if(event.target.id === "option2" && level === "2" ){
+          this.setState(level2ChoiceBM, () => { this.props.setGame(this.state)})
+        }
     }
 
        

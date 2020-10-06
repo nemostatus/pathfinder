@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import ls from 'local-storage'
 import {connect} from 'react-redux'
-import {goblinAttack} from '../actions/gamesActions'
-import {choices} from '../choices'
+import {setGame} from '../actions/gamesActions'
+import {level1ChoiceABelt} from '../choices'
+import {level1ChoiceBBelt} from '../choices'
 
 
 
@@ -26,20 +27,16 @@ import {choices} from '../choices'
      if(event.target.id === "option1" && level === "1" ) {
      //lose 2 hearts, change level to 2, change prompt and choice1,2
    
-     this.setState(choices, () => { this.props.goblinAttack(this.state)})
+     this.setState(level1ChoiceABelt, () => { this.props.setGame(this.state)})
 
                
 }
      else if(event.target.id === "option2" && level === "1" ){
-        this.setState(
-       choices
        
-   
-        )
+      
+        this.setState(level1ChoiceBBelt, () => { this.props.setGame(this.state)})
      }
-     //send this state to an action that will update the current game
-
-        }
+    }
 
        
     render() {
@@ -58,17 +55,16 @@ import {choices} from '../choices'
                         
            <div id = "option1" className = "option1" onClick={this.handleClick} >
            {this.state.choice1}
-           {/* Save the damsel! */}
-           {/* <button value = "a" onClick={this.handleClick(this.state.level)}>Choose this</button> */}
+        
                </div>
 
              <div id= "option2" className = "option2" onClick={this.handleClick} >
              {this.state.choice2}
-             {/* ' Move forward into the forest.' */}
+            
            
                </div>
                </div>
   )
     }
 }
-export default connect(null, {goblinAttack})(StoryBoard)
+export default connect(null, {setGame})(StoryBoard)

@@ -15,7 +15,7 @@ import ls from 'local-storage'
         user_id: ls.get('user_id'),
         choice1: 'Order the pilot to manuever through the belt',
         choice2: 'Oreder the pilot to use the hyper-beam',
-        prompt: 'The year is 3030.You are the cpt. of a space mission. Your mission is to head from the mars base to Pluto\
+        prompt: 'The year is 3030.You are the cpt. of a space mission to head from the mars base to establish a base on Pluto\
         With everything going to plan you hear the pilot yell out that the ships is heading toward an asteroid belt.You..'
 
         }

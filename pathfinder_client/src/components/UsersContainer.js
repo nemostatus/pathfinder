@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Usersform from './Registration'
+import Registration from './Registration'
 export class UsersContainer extends Component {
 
 render() {
@@ -7,7 +7,7 @@ render() {
             <div>
                 
                 users Container
-                <Usersform />
+                <Registration/>
             </div>
         )
     }

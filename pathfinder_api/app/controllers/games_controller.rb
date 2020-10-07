@@ -43,6 +43,8 @@ class GamesController < ApplicationController
 
   # DELETE /games/1
   def destroy
+    @user = User.find(params[:user_id])
+    @game = @user.games.find(params[:id])
     @game.destroy
   end
 

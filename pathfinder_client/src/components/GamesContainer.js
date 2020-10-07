@@ -17,7 +17,7 @@ import {fetchGames} from '../actions/gamesActions'
         return (
             <div>
                <NewGame/>
-                Games Container
+             
        
             {this.props.user.map( user => 
          

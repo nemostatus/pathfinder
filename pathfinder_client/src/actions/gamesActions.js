@@ -42,7 +42,7 @@ headers: {'Content-Type': 'application/json'}
 }
 
 
-export const setGame = game => {
+export const updateGame = game => {
     return dispatch => {
         fetch(`http://127.0.0.1:3001/users/${game.user_id}/games/${game.id}`,{
          method: "PUT",
@@ -64,6 +64,9 @@ export const setGame = game => {
     }
 }
 
+export const deleteGame = game => {fetch(`http://127.0.0.1:3001/users/${game.user_id}/games/${game.id}`, {
+method: "DELETE"
+})}
 
 
     

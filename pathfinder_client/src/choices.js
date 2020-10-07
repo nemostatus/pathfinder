@@ -60,17 +60,28 @@ export const shipwreckthruster ={
     export  const finalsdecisionsignal= {
     
         prompt: ' You signal to the craft explaining you come in peace and they send out a response \
-        Your team works on deciphering it.  ',
-       choice1:  'Generate',
+        Your team works on deciphering it. Your crew is enlightened with the signal sent over and \
+        the alien craft assists you in landing safely and helping you build an amazing base.  ',
+       choice1:  'Generate random meme pic here',
+       choice2: 'Generate random meme pic here',
+       level:"Win",
+       hearts: 3
+    }
+
+    export  const finalsdecisionfire= {
+    
+        prompt: ' As your mega ultimate super beam charges up in a furious fashion you see a  \
+        flash of light sweep in your direction, you tell your crew they will be remembered. ',
+       choice1:  '',
        choice2: '',
-       level:"Final Showdown",
-       hearts: 5
+       level:"Game Over",
+       hearts: 0
     }
 
 
 
     ///////////////////
-    export  const blackHole= {
+    export  const blackhole= {
     
         prompt: 'Your engineer reroutes all of the seemingly non essential components of the ship to the battery. \
         At %100 charge your ship charges at a very swift pace to Pluto. Wait.... your engineer explains that after \
@@ -80,5 +91,14 @@ export const shipwreckthruster ={
        choice1:  'Turn Right',
        choice2: 'Turn left.',
        level:"Black Hole",
-       hearts: Math.random()
+       hearts: Math.floor(Math.random() * 100)
+    }
+
+    export  const gameover= {
+    
+        prompt: 'You and your crew fought valiantly until the end, you have everything to be proud of. ',
+       choice1:  '',
+       choice2: '',
+       level:"Game Over",
+       hearts: 0
     }

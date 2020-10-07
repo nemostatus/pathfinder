@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import ls from 'local-storage'
 import {connect} from 'react-redux'
 import {setGame} from '../actions/gamesActions'
-import {asteroidManuever} from '../choices'
-import {asteroidBeam} from '../choices'
-import {shipWreckThruster} from '../choices'
-import {shipWreckDoNothing} from '../choices'
+import * as choices from '../choices'
+
 
 
  class StoryBoard extends Component {
@@ -27,20 +25,39 @@ import {shipWreckDoNothing} from '../choices'
      const level = this.state.level
      if(event.target.id === "option1" && level === "Asteroid Belt" ) {
      //lose 2 hearts, change level to 2, change prompt and choice1,2
-   this.setState(asteroidManuever, () => { this.props.setGame(this.state)}) // manuever
+   this.setState(choices.asteroidmanuever, () => { this.props.setGame(this.state)}) // manuever
     }
-     else if(event.target.id === "option2" && level === "1" ){
-    this.setState(asteroidBeam, () => { this.props.setGame(this.state)}) //beam
+     else if(event.target.id === "option2" && level === "Asteroid Belt" ){
+    this.setState(choices.asteroidbeam, () => { this.props.setGame(this.state)}) //beam
 
      }
       // end  of level 1 //////////////////////
      else if(event.target.id === "option1" && level === "Ship Wreck" ) {
-       this.setState(shipWreckThruster, () => { this.props.setGame(this.state)})
+       this.setState(choices.shipwreckthruster, () => { this.props.setGame(this.state)})
   }
         else if(event.target.id === "option2" && level === "Ship Wreck" ){
-          this.setState(shipWreckDoNothing, () => { this.props.setGame(this.state)})
+          this.setState(choices.shipwreckdonothing, () => { this.props.setGame(this.state)})
         }
+        else if(event.target.id === "option1" && level === "Low Battery" ) {
+            this.setState(choices.lowbatterypowersave, () => { this.props.setGame(this.state)})
+       }
+             else if(event.target.id === "option2" && level === "Low Battery" ){
+               this.setState(choices.lowbatteryreroute, () => { this.props.setGame(this.state)})
+             }
+             else if(event.target.id === "option1" && level === "Final Decision" ) {
+                this.setState(choices.finalsdecisionfire, () => { this.props.setGame(this.state)})
+           }
+                 else if(event.target.id === "option2" && level === "Final Decision" ){
+                   this.setState(choices.finalsdecisionsignal, () => { this.props.setGame(this.state)})
+                 }
+             else if( level === "Black Hole" ) {
+                this.setState(choices.blackhole)
+           }
+                 else if( level === "Game Over" ){
+                   this.setState(choices.gameover, () => { this.props.setGame(this.state)})
+                 }
     }
+    
 
        
     render() {

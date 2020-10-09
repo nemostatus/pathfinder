@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
+import { findUser } from '../actions/usersActions'
 
-export default class Login extends Component {
+ class Login extends Component {
     state = {
         username: '',
-        password: '',
-        password_confirmation: ''
+        password: ''
     }
 
 
@@ -38,3 +39,5 @@ export default class Login extends Component {
         )
     }
 }
+
+export default connect(null, {findUser})(Login)

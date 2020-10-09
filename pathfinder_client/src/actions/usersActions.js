@@ -16,6 +16,15 @@ headers: {'Content-Type': 'application/json'}   //creating a record in the db
     }
 }
 
+export  const findUser = user => {
+    return dispatch => {
+fetch('http://127.0.0.1:3001/sessions', {
+method: 'POST',
+withCredentials: true,
+body: JSON.stringify(user),
+headers: {'Content-Type': 'application/json'} })
+.then(resp => console.log(resp, "this is response"))}} //creating a record in the db
+
 
 
 //redirect to homepage

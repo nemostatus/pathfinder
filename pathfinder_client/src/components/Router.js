@@ -9,6 +9,7 @@ import NewGame from './NewGame'
 import Registration from './Registration'
 import StoryBoard from './StoryBoard'
 import Login from './Login'
+import About from './About'
 
 const Router = () => {
     return(
@@ -19,6 +20,7 @@ const Router = () => {
             <Route exact path="/storyboard" component={StoryBoard}/>
             <Route exact path="/login" component={Login}/>
             <Route exact path="/games" component={GamesList}/>
+            <Route exact path="/about" component={About}/>
           
             <Route exact path="/newgame" component= {NewGame}/>
            

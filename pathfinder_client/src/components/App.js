@@ -9,24 +9,23 @@ import  UsersContainer from './UsersContainer'
 
 
 const App = (props) => {
- if (props.isLoggedIn === false){
-     return (
-        <div>
-        <Login/>
-        <GamesContainer/>
-         <UsersContainer/>
-  <Router />
-      </div>
-     )
- }
-   else {
+
+    if (props.isLoggedIn === false){
     return (
         <div>
-          
-          <GamesContainer/>
-         <UsersContainer/>
+           <Login/>
+         <Registration/>
+
            <Router />
         </div>
+    )
+
+}
+else{
+    return ( <div>
+        <UsersContainer/>
+    <Router />
+    </div>
     )
 } }
 

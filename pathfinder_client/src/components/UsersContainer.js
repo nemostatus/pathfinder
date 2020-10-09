@@ -3,6 +3,7 @@ import Registration from './Registration'
 import {connect} from 'react-redux'
 import {addUser} from '../actions/usersActions'
 import {fetchUsers} from '../actions/usersActions'
+import Login from './Login'
 
 export class UsersContainer extends Component {
 
@@ -12,7 +13,7 @@ export class UsersContainer extends Component {
 render() {
         return (
             <div>
-                
+        
             </div>
         )
     }

@@ -10,7 +10,7 @@ headers: {'Content-Type': 'application/json'}   //creating a record in the db
 
     })
     .then(resp => resp.json())
-    .then(user => dispatch({type: 'ADD_USER', payload: user})) //updating in store
+    .then(user => dispatch({type: 'ADD_USER', payload: user, isLoggedIn: true})) //updating in store
        .then(user => ls.set('user_id', user.payload.id)) //setting user_id in localstorage
      
     }
@@ -24,6 +24,7 @@ withCredentials: true,
 body: JSON.stringify(user),
 headers: {'Content-Type': 'application/json'} })
 .then(resp => resp.json())
+.then(user => dispatch({type: 'ADD_USER', payload: user, isLoggedIn: true}))
 .then(result => ls.set('user_id',result.user.id))}}
 
 //creating a record in the db

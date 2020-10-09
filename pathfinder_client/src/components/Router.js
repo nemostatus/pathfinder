@@ -25,6 +25,7 @@ const Router = () => {
             <Route exact path="/about" component={About}/>
             <Route exact path="/astronauts" component= {Userslist}/>
             <Route exact path="/newgame" component= {NewGame}/>
+       
            
             </Switch>
     )

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import { findUser } from '../actions/usersActions'
+import { withRouter } from 'react-router';
 
 import {Link} from 'react-router-dom'
 
@@ -21,7 +22,8 @@ import {Link} from 'react-router-dom'
     handleSubmit = e => {
         e.preventDefault()
         this.props.findUser(this.state)
-        this.props.history.push('/games')
+        this.props.history.push('/games');
+      
     }
     render() {
         return (
@@ -36,10 +38,10 @@ import {Link} from 'react-router-dom'
                     
                     <input type="submit" value="Login"></input>
                 </form>
-                No account? Create one here. <Link to='/registration'>Register</Link>
+              
             </div>
         )
     }
 }
 
-export default connect(null, {findUser})(Login)
+export default  withRouter(connect(null, {findUser})(Login))

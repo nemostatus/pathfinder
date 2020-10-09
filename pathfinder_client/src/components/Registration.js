@@ -46,7 +46,7 @@ class Registration extends Component {
             
                     <input type="submit" value="create user"></input>
                 </form>
-                Have an account? <Link to = '/login'>Login</Link>
+             
                 
             </div>
         )

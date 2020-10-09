@@ -3,6 +3,7 @@ import ls from 'local-storage'
 import {connect} from 'react-redux'
 import {updateGame} from '../actions/gamesActions'
 import * as choices from '../choices'
+import Navbar from './Navbar'
 
 
 
@@ -62,9 +63,10 @@ import * as choices from '../choices'
        
     render() {
         return (
-            
+  
             <div>
                                 
+                                <Navbar/>
            <div className = "hearts" >
            {this.state.hearts} <i className="fas fa-heart" style={{color:"red"}}></i> 
                </div>

@@ -3,7 +3,8 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import ls from 'local-storage'
 import {deleteGame} from '../actions/gamesActions'
-
+import Navbar from './Navbar'
+import NewGame from  './NewGame'
 
 
 const GamesList = ({ games }) => {
@@ -13,7 +14,8 @@ const GamesList = ({ games }) => {
  return (
    
         <div >
-    
+    <Navbar/>
+    <NewGame/>
          <h1> Click to load file </h1>
             {games.map( game => 
          
@@ -26,7 +28,7 @@ const GamesList = ({ games }) => {
           {game.hearts}<i className="fas fa-heart" style={{color:"red"}}></i> 
             <br/>
              items-{game.items} 
-             <button onClick={deleteGame(game)} >Delete File</button> 
+             {/* <button onClick={deleteGame(game)} >Delete File</button>  */}
       
              </div>
             
@@ -43,4 +45,4 @@ const mapStateToProps = state => {
     return { games: state.games  }
 }
 
-export default connect(mapStateToProps, {deleteGame})(GamesList)
+export default connect(mapStateToProps)(GamesList)

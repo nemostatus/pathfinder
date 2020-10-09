@@ -2,6 +2,7 @@ import React from 'react'
 import Router from './Router'
 import GamesContainer from './GamesContainer'
 import Navbar from './Navbar'
+import Login from './Login'
 
 
 
@@ -10,8 +11,9 @@ const App = () => {
    
     return (
         <div>
-            <Navbar/>
+          
           <GamesContainer/>
+          <Login/>
            <Router />
         </div>
     )

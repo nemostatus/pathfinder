@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import { findUser } from '../actions/usersActions'
 
+import {Link} from 'react-router-dom'
+
  class Login extends Component {
     state = {
         username: '',
@@ -32,9 +34,9 @@ import { findUser } from '../actions/usersActions'
                     <label>Password:</label>
                     <input type="text" value ={this.state.password} onChange={this.handleChange} name="password"></input>
                     
-                    <input type="submit" value="create user"></input>
+                    <input type="submit" value="Login"></input>
                 </form>
-                
+                No account? Create one here. <Link to='/registration'>Register</Link>
             </div>
         )
     }

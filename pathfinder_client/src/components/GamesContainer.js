@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
+import Navbar from './Navbar'
 
 import {fetchGames} from '../actions/gamesActions'
 
@@ -17,6 +18,7 @@ import {fetchGames} from '../actions/gamesActions'
     render() {
         return (
             <div>
+             
              
             
        

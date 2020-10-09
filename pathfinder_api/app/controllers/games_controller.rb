@@ -11,6 +11,7 @@ class GamesController < ApplicationController
 
   # GET /games/1
   def show
+   
     @user = User.find(params[:user_id])
     @game = @user.games.find(params[:id])
 

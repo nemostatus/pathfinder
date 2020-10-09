@@ -23,7 +23,8 @@ method: 'POST',
 withCredentials: true,
 body: JSON.stringify(user),
 headers: {'Content-Type': 'application/json'} })
-.then(resp => console.log(resp, "this is response"))}} //creating a record in the db
+.then(resp => resp.json())
+.then(result => ls.set('user_id',result.user.id))}} //creating a record in the db
 
 
 

@@ -13,7 +13,7 @@ const App = () => {
         <div>
           
           <GamesContainer/>
-          <Login/>
+         
            <Router />
         </div>
     )

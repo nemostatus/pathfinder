@@ -3,6 +3,8 @@ import {connect} from 'react-redux'
 import { addUser } from '../actions/usersActions'
 import { withRouter} from 'react-router'
 
+import {Link} from 'react-router-dom'
+
 class Registration extends Component {
 
     state = {
@@ -42,7 +44,7 @@ class Registration extends Component {
             
                     <input type="submit" value="create user"></input>
                 </form>
-
+                Have an account? <Link to = '/login'>Login</Link>
                 
             </div>
         )

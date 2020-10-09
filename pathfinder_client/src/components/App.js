@@ -3,6 +3,8 @@ import Router from './Router'
 import GamesContainer from './GamesContainer'
 import Navbar from './Navbar'
 import Login from './Login'
+import Registration from './Registration'
+import { UsersContainer } from './UsersContainer'
 
 
 
@@ -11,6 +13,7 @@ const App = (props) => {
      return (
         <div>
         <Login/>
+  <Router />
       </div>
      )
  }
@@ -19,7 +22,7 @@ const App = (props) => {
         <div>
           
           <GamesContainer/>
-         
+         <UsersContainer/>
            <Router />
         </div>
     )

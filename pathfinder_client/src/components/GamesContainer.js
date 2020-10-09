@@ -34,12 +34,10 @@ import {fetchGames} from '../actions/gamesActions'
             
            )}
  </div>)}}
-const mapStateToProps = state => {
-    return { user: state.users}
-}
 
 
 
-export default connect(mapStateToProps, { fetchGames})(GamesContainer);
+
+export default connect(null, { fetchGames})(GamesContainer);
 
 

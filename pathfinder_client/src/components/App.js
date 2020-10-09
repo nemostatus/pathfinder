@@ -4,7 +4,7 @@ import GamesContainer from './GamesContainer'
 import Navbar from './Navbar'
 import Login from './Login'
 import Registration from './Registration'
-import { UsersContainer } from './UsersContainer'
+import  UsersContainer from './UsersContainer'
 
 
 
@@ -13,6 +13,8 @@ const App = (props) => {
      return (
         <div>
         <Login/>
+        <GamesContainer/>
+         <UsersContainer/>
   <Router />
       </div>
      )

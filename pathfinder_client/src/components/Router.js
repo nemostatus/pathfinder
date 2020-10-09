@@ -11,6 +11,8 @@ import StoryBoard from './StoryBoard'
 import Login from './Login'
 import About from './About'
 
+import Userslist from './Userslist'
+
 const Router = () => {
     return(
         <Switch>
@@ -21,7 +23,7 @@ const Router = () => {
             <Route exact path="/login" component={Login}/>
             <Route exact path="/games" component={GamesList}/>
             <Route exact path="/about" component={About}/>
-          
+            <Route exact path="/heroes" component= {Userslist}/>
             <Route exact path="/newgame" component= {NewGame}/>
            
             </Switch>

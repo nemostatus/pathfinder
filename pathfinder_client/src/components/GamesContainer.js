@@ -18,22 +18,17 @@ import {fetchGames} from '../actions/gamesActions'
     render() {
         return (
             <div>
+                <h1>Fellow Astronauts!</h1>
+                
+
+                
+                </div>)
+                }
+            }
              
              
             
        
-            {this.props.user.map( user => 
-         
-        
-            <div key ={user.id} className= "list">
-            user - {user.username}
-            
-            
-            </div>
-           
-            
-           )}
- </div>)}}
 
 
 

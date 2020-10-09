@@ -1,9 +1,11 @@
 
 import React from 'react'
-
+import Navbar from './Navbar'
 export default function About() {
     return (
+       
         <div>
+            <Navbar/>
             This is application built using react, if you want to start a new adventure click on your games above and create as 
             many files as you'd like to explore all the adventure has to offer.
         </div>

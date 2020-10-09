@@ -6,9 +6,15 @@ import Login from './Login'
 
 
 
-const App = () => {
- 
-   
+const App = (props) => {
+ if (props.isLoggedIn === false){
+     return (
+        <div>
+        <Login/>
+      </div>
+     )
+ }
+   else {
     return (
         <div>
           
@@ -17,7 +23,7 @@ const App = () => {
            <Router />
         </div>
     )
-}
+} }
 
 
 export default App;

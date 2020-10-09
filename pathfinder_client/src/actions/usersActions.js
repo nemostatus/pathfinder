@@ -24,9 +24,8 @@ withCredentials: true,
 body: JSON.stringify(user),
 headers: {'Content-Type': 'application/json'} })
 .then(resp => resp.json())
-.then(user => dispatch({type: 'ADD_USER', payload: user, isLoggedIn: true}))
-.then(result => ls.set('user_id',result.user.id))}}
-
+.then(result => ls.set('user_id',result.user.id))
+    }}
 //creating a record in the db
 export const fetchUsers = () => {
     return dispatch => {

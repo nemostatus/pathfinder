@@ -19,10 +19,7 @@ import {fetchGames} from '../actions/gamesActions'
         return (
             <div>
                
-
-
-                
-                </div>)
+          </div>)
                 }
             }
              

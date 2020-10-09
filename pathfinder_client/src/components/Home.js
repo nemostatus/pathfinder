@@ -8,7 +8,7 @@ import React, { Component } from 'react'
         return (
             <div>
                 <h1>Home</h1>
-                <Registration/>
+               
               
             </div>
         )

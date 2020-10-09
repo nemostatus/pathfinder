@@ -26,7 +26,7 @@ class Registration extends Component {
       
         this.props.addUser(this.state)
         this.props.history.push('/games')
-        this.props.isLoggedIn = true
+       
     }
     render() {
 

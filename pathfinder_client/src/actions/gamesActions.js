@@ -36,6 +36,7 @@ headers: {'Content-Type': 'application/json'}
 })
     .then(resp => resp.json())
     .then(game => dispatch({type: 'ADD_GAME', payload: game}))
+  
     // .then(game => ls.set('game', game.payload))
     
     }

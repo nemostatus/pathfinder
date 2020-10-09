@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 const UsersList = ({users}) =>{
     return (
         <div>
+             <h1>Fellow Astronauts!</h1>
             {users.map(user =>
              <div className= "list" key = {user.id}  >
          {user.username}

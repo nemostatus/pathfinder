@@ -28,7 +28,7 @@ import {Link} from 'react-router-dom'
             <div>
               <h1> Log in </h1>
                 <form onSubmit = {this.handleSubmit}>
-                    <label>Name:</label>
+                    <label>Astronaut Name:</label>
                     <input type="text" value ={this.state.username} onChange={this.handleChange} name="username"></input>
                     <br/>
                     <label>Password:</label>

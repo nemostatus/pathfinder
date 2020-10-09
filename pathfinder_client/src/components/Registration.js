@@ -34,7 +34,7 @@ class Registration extends Component {
             <div>
                 <h1> Sign Up </h1>
                 <form onSubmit = {this.handleSubmit}>
-                    <label>Name:</label>
+                    <label>Astronaut Name(will be shown as a link to your profile)</label>
                     <input type="text" value ={this.state.username} onChange={this.handleChange} name="username"></input>
                     <br/>
                     <label>Password:</label>

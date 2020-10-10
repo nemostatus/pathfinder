@@ -27,7 +27,7 @@ else{
     return ( <div>
         <UsersContainer/>
         <GamesContainer/>
-        <StoryBoard/>
+      
     <Router />
     </div>
     )

@@ -11,7 +11,7 @@ import {connect} from 'react-redux'
 
        
 
- const App = () => {
+ const App = (props) => {
 
 
 //map redux state to prop you have findeuser make adispatch updating the 
@@ -19,7 +19,7 @@ import {connect} from 'react-redux'
 //should i send payload to users reducer, then what?
 //map over state and set a ternary, if users state has a user render the second half if not then render login 
 //clear state on logout call and reroute to '/'
-    if (ls.get("user_id") === null){ //its not working try props
+    if (ls.get("user_id") === null || props.users === null){ //its not working try props
     return (
         <div>
            <Login/>
@@ -40,9 +40,9 @@ else{
 } }
 
 
-// const mapStateToProps = state => {
-//         return { users: state.users  }
-//     }
+const mapStateToProps = state => {
+        return { users: state.users  }
+    }
 
 
-export default App
+export default connect(mapStateToProps)(App)

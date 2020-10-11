@@ -28,8 +28,8 @@ export const shipwreckthruster ={
 
     export const shipwreckdonothing ={
         prompt: 'You do nothing and end up crashing into an asteroid. You and your crew ill be remembered.',
-       choice1:  '',
-       choice2: '',
+       choice1:  'GAME',
+       choice2: 'OVER',
        level:"Game Over",
        hearts: 0
         }
@@ -39,8 +39,8 @@ export const shipwreckthruster ={
         prompt: 'You engage power saving mode for your ship. Your ship is now significantly slower\
        and moves at a dangerously slow pace. After expending your resources your crew grows weary \
        and meet their maker. They will be remembered. ',
-       choice1:  '',
-       choice2: '',
+       choice1:  'GAME ',
+       choice2: 'OVER',
        level:"Game Over",
        hearts: 0
     }
@@ -65,7 +65,7 @@ export const shipwreckthruster ={
        choice1:  'The aliens send over a signal that cant be deciphered but you have a gut instinct they come in peace\
        Before you know it they fly swiftly to your ship and connect to it via their advanced technology. You see a\
        beam of white light and realize that everything is okay and you have nothing to worry about anymore.  ',
-       choice2: '',
+       choice2: 'YOU WIN!',
        level:"Win",
        hearts: 3
     }
@@ -74,8 +74,8 @@ export const shipwreckthruster ={
     
         prompt: ' As your mega ultimate super beam charges up in a furious fashion you see a  \
         flash of light sweep in your direction, you tell your crew they will be remembered. ',
-       choice1:  'GAME OVER',
-       choice2: '',
+       choice1:  'GAME ',
+       choice2: 'OVER',
        level:"Game Over",
        hearts: 0
     }
@@ -99,8 +99,8 @@ export const shipwreckthruster ={
     export  const gameover= {
     
         prompt: 'You and your crew fought valiantly until the end, you have everything to be proud of. ',
-       choice1:  '',
-       choice2: '',
+       choice1:  'GAME ',
+       choice2: 'OVER',
        level:"Game Over",
        hearts: 0
     }

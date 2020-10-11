@@ -31,7 +31,7 @@ import {connect} from 'react-redux'
 }
 else{
     return ( <div>
-        <GamesContainer/>
+       
         <UsersContainer/>
       <Navbar/>
         <Router/>
@@ -40,9 +40,9 @@ else{
 } }
 
 
-const mapStateToProps = state => {
-        return { users: state.users  }
-    }
+// const mapStateToProps = state => {
+//         return { users: state.users  }
+//     }
 
 
-export default connect(mapStateToProps)(App)
+export default App

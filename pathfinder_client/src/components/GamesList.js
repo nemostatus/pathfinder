@@ -5,6 +5,7 @@ import ls from 'local-storage'
 import {deleteGame} from '../actions/gamesActions'
 import Navbar from './Navbar'
 import NewGame from  './NewGame'
+import GamesContainer from './GamesContainer'
 
 
 const GamesList = ({ games }) => {
@@ -14,7 +15,8 @@ const GamesList = ({ games }) => {
  return (
    
         <div >
- 
+ <GamesContainer/>
+    
     <NewGame/>
          <h1> Click to load file </h1>
             {games.map( game => 

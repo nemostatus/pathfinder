@@ -19,7 +19,7 @@ import {connect} from 'react-redux'
         <div>
             
              <Link to ={ '/about' }  style={{ marginRight: 10 }} >About </Link>
-            
+            <Link to ={'/astronauts'} style={{ marginRight: 10 }} >Fellow Astronauts </Link>
              <Link to ={ '/games' }  style={{ marginRight: 10 }}> Your Games</Link>
              <Link to ={ '/' } style={{ marginRight: 10 }} onClick = {handleLogout}> Logout </Link>
 

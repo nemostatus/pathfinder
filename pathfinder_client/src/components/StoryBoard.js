@@ -66,7 +66,7 @@ import Navbar from './Navbar'
   
             <div>
                                 
-                                <Navbar/>
+                            
            <div className = "hearts" >
            {this.state.hearts} <i className="fas fa-heart" style={{color:"red"}}></i> 
                </div>

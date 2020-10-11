@@ -14,7 +14,7 @@ const GamesList = ({ games }) => {
  return (
    
         <div >
-    <Navbar/>
+ 
     <NewGame/>
          <h1> Click to load file </h1>
             {games.map( game => 

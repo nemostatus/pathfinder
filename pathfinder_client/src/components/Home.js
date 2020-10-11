@@ -8,8 +8,6 @@ import Navbar from './Navbar'
         return (
             <div>
                 <Navbar/>
-                <h1>Home</h1>
-               <p>Welcome! </p>
               
             </div>
         )

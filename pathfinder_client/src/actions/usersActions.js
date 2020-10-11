@@ -10,7 +10,7 @@ headers: {'Content-Type': 'application/json'}   //creating a record in the db
 
     })
     .then(resp => resp.json())
-    .then(user => dispatch({type: 'ADD_USER', payload: user, isLoggedIn: true})) //updating in store
+    .then(user => dispatch({type: 'ADD_USER', payload: user})) //updating in store
        .then(user => ls.set('user_id', user.payload.id)) //setting user_id in localstorage
      
     }
@@ -25,6 +25,8 @@ body: JSON.stringify(user),
 headers: {'Content-Type': 'application/json'} })
 .then(resp => resp.json())
 .then(result => ls.set('user_id',result.user.id))
+.then(result => dispatch({type: 'ADD_USER', payload: result}))
+
     }}
 //creating a record in the db
 export const fetchUsers = () => {
@@ -35,6 +37,13 @@ export const fetchUsers = () => {
         
     }
 }
+
+export const userslogout = () => {
+    return dispatch => {
+        dispatch({type: "RESET_STORE"})
+    }
+}
+
 
 
 //redirect to homepage

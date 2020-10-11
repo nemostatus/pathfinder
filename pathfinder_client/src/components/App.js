@@ -7,13 +7,19 @@ import Registration from './Registration'
 import  UsersContainer from './UsersContainer'
 import ls from 'local-storage'
 import StoryBoard from './StoryBoard'
+import {connect} from 'react-redux'
+
+       
+
+ const App = (props) => {
 
 
-
-const App = () => {
-const loggedIn = ls.get('user_id')
-
-    if (loggedIn === null){
+//map redux state to prop you have findeuser make adispatch updating the 
+//so far i have a users reducer and a games reducer
+//should i send payload to users reducer, then what?
+//map over state and set a ternary, if users state has a user render the second half if not then render login 
+//clear state on logout call and reroute to '/'
+    if (props.users.length === 0){ //its not working try props
     return (
         <div>
            <Login/>
@@ -25,13 +31,18 @@ const loggedIn = ls.get('user_id')
 }
 else{
     return ( <div>
-        <UsersContainer/>
         <GamesContainer/>
-      
-    <Router />
+        <UsersContainer/>
+      <Navbar/>
+        <Router/>
     </div>
     )
 } }
 
 
-export default App;
+const mapStateToProps = state => {
+        return { users: state.users  }
+    }
+
+
+export default connect(mapStateToProps)(App)

@@ -38,10 +38,10 @@ class Registration extends Component {
                     <input type="text" value ={this.state.username} onChange={this.handleChange} name="username"></input>
                     <br/>
                     <label>Password:</label>
-                    <input type="text" value ={this.state.password} onChange={this.handleChange} name="password"></input>
+                    <input type="password" value ={this.state.password} onChange={this.handleChange} name="password"></input>
                     <br/>
                     <label>Password Confirmation:</label>
-                    <input type="text" value ={this.state.password_confirmation} onChange={this.handleChange} name="password_confirmation"></input>
+                    <input type="password" value ={this.state.password_confirmation} onChange={this.handleChange} name="password_confirmation"></input>
                     <br/>
             
                     <input type="submit" value="create user"></input>

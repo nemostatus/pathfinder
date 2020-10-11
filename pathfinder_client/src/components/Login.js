@@ -22,7 +22,7 @@ import {Link} from 'react-router-dom'
     handleSubmit = e => {
         e.preventDefault()
         this.props.findUser(this.state)
-        this.props.history.push('/games');
+        this.props.history.push('/');
       
     }
     render() {
@@ -34,7 +34,7 @@ import {Link} from 'react-router-dom'
                     <input type="text" value ={this.state.username} onChange={this.handleChange} name="username"></input>
                     <br/>
                     <label>Password:</label>
-                    <input type="text" value ={this.state.password} onChange={this.handleChange} name="password"></input>
+                    <input type="password" value ={this.state.password} onChange={this.handleChange} name="password"></input>
                     
                     <input type="submit" value="Login"></input>
                 </form>

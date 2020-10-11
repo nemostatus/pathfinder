@@ -14,7 +14,7 @@ const GamesList = ({ games }) => {
  return (
    
         <div >
-<Navbar/>
+    <Navbar/>
     <NewGame/>
          <h1> Click to load file </h1>
             {games.map( game => 
@@ -27,7 +27,7 @@ const GamesList = ({ games }) => {
            
           {game.hearts}<i className="fas fa-heart" style={{color:"red"}}></i> 
             <br/>
-             items-{game.items} 
+            
              {/* <button onClick={deleteGame(game)} >Delete File</button>  */}
       
              </div>

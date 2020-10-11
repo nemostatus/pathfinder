@@ -62,8 +62,10 @@ export const shipwreckthruster ={
         prompt: ' You signal to the craft explaining you come in peace and they send out a response \
         Your team works on deciphering it. Your crew is enlightened with the signal sent over and \
         the alien craft assists you in landing safely and helping you build an amazing base.  ',
-       choice1:  'Generate random meme pic here',
-       choice2: 'Generate random meme pic here',
+       choice1:  'The aliens send over a signal that cant be deciphered but you have a gut instinct they come in peace\
+       Before you know it they fly swiftly to your ship and connect to it via their advanced technology. You see a\
+       beam of white light and realize that everything is okay and you have nothing to worry about anymore.  ',
+       choice2: '',
        level:"Win",
        hearts: 3
     }
@@ -72,7 +74,7 @@ export const shipwreckthruster ={
     
         prompt: ' As your mega ultimate super beam charges up in a furious fashion you see a  \
         flash of light sweep in your direction, you tell your crew they will be remembered. ',
-       choice1:  '',
+       choice1:  'GAME OVER',
        choice2: '',
        level:"Game Over",
        hearts: 0

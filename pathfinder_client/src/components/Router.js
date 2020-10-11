@@ -10,7 +10,7 @@ import Registration from './Registration'
 import StoryBoard from './StoryBoard'
 import Login from './Login'
 import About from './About'
-
+import Navbar from './Navbar'
 import Userslist from './Userslist'
 
 const Router = () => {
@@ -25,6 +25,7 @@ const Router = () => {
             <Route exact path="/about" component={About}/>
             <Route exact path="/astronauts" component= {Userslist}/>
             <Route exact path="/newgame" component= {NewGame}/>
+            <Route exact path="/navbar" component= {Navbar}/>
        
            
             </Switch>

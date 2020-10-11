@@ -69,6 +69,12 @@ export const deleteGame = game => {fetch(`http://127.0.0.1:3001/users/${game.use
 method: "DELETE"
 })}
 
+export const gameslogout = () => {
+    return dispatch => {
+        dispatch({type: "LOGOUT"})
+    }
+}
+
 
     
 

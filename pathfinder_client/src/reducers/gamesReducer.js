@@ -6,6 +6,8 @@ export const gamesReducer = (state = [], action) => {
             return [...state, action.payload]
             case "LOSE_HEART":
                 return [...state, action.payload]
+                case "LOGOUT":
+                    state = []
                
             default:
             return state

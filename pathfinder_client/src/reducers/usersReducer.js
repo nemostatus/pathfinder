@@ -7,6 +7,8 @@ export const usersReducer = (state = [], action) => {
 
          case "ADD_USER":
              return [...state, action.payload]
+             case "LOGOUT":
+                 state = []
             default:
             return state
     }

@@ -25,7 +25,7 @@ class Registration extends Component {
         e.preventDefault()
       
         this.props.addUser(this.state)
-        this.props.history.push('/games')
+        this.props.history.push('/')
        
     }
     render() {

@@ -7,6 +7,7 @@ import {composeWithDevTools} from 'redux-devtools-extension'
 import {rootReducer} from './reducers/rootReducer'
 import App from './components/App'
 
+
 import {BrowserRouter as Router} from 'react-router-dom'
 
 
@@ -21,6 +22,7 @@ const store = createStore(
 ReactDOM.render(
     <Provider store ={store}>
         <Router>
+          
         <App />
         </Router>
 

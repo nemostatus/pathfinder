@@ -4,16 +4,18 @@ import {connect} from 'react-redux'
 import {addUser} from '../actions/usersActions'
 import {fetchUsers} from '../actions/usersActions'
 import Login from './Login'
+import UsersList from './Userslist'
 
 export class UsersContainer extends Component {
 
     componentDidMount(){
-        this.props.fetchUsers()
+       this.props.fetchUsers()
+       
         }
 render() {
         return (
             <div>
-        
+        <UsersList/>
             </div>
         )
     }

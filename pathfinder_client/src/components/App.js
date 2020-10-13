@@ -32,7 +32,7 @@ import {connect} from 'react-redux'
 else{
     return ( <div>
        
-        <UsersContainer/>
+       
       <Navbar/>
         <Router/>
     </div>

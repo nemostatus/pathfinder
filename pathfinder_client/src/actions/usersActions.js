@@ -29,7 +29,7 @@ headers: {'Content-Type': 'application/json'} })
     }}
 
 
-export const fetchUsers = () => {
+export  const fetchUsers = () => {
     return dispatch => {
         fetch(`http://127.0.0.1:3001/users`)
         .then(resp => resp.json())

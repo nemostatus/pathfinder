@@ -23,9 +23,8 @@ class Registration extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
-      
         this.props.addUser(this.state)
-        this.props.history.push('/')
+        this.props.history.push('/');
        
     }
     render() {

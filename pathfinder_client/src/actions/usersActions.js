@@ -5,13 +5,12 @@ fetch('http://127.0.0.1:3001/users', {
 method: 'POST',
 withCredentials: true,
 body: JSON.stringify(user),
-headers: {'Content-Type': 'application/json'}   //creating a record in the db
-
-
-    })
+headers: {'Content-Type': 'application/json'}   
+})
     .then(resp => resp.json())
-    .then(user => dispatch({type: 'ADD_USER', payload: user})) //updating in store
-       .then(user => ls.set('user_id', user.payload.id)) //setting user_id in localstorage
+    .then(user => ls.set('user_id', user.id)) 
+    .then(user => dispatch({type: 'ADD_USER', payload: user})) 
+       
      
     }
 }
@@ -28,7 +27,8 @@ headers: {'Content-Type': 'application/json'} })
 .then(result => dispatch({type: 'ADD_USER', payload: result}))
 
     }}
-//creating a record in the db
+
+
 export const fetchUsers = () => {
     return dispatch => {
         fetch(`http://127.0.0.1:3001/users`)

@@ -24,7 +24,7 @@ import {connect} from 'react-redux'
         <div>
            <Login/>
          <Registration/>
-       
+       {console.log(props.users)}
 
         </div>
     )

@@ -15,7 +15,7 @@ const GamesList = ({ games }) => {
  return (
    
         <div >
- <GamesContainer/>
+ 
     
     <NewGame/>
          <h1> Click to load file </h1>

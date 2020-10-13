@@ -3,13 +3,9 @@ import {connect} from 'react-redux'
 import Navbar from './Navbar'
 
 import {fetchGames} from '../actions/gamesActions'
+import GamesList from './GamesList'
 
-
-
-
-
-
- export class GamesContainer extends Component {
+export class GamesContainer extends Component {
 
     componentDidMount(){
         this.props.fetchGames()
@@ -18,7 +14,7 @@ import {fetchGames} from '../actions/gamesActions'
     render() {
         return (
             <div>
-               
+               <GamesList/>
           </div>)
                 }
             }

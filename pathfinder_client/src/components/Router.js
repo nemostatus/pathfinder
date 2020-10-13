@@ -13,6 +13,7 @@ import About from './About'
 import Navbar from './Navbar'
 import UsersList from './Userslist'
 import  UsersContainer  from './UsersContainer'
+import  GamesContainer  from './GamesContainer'
 
 const Router = () => {
     return(
@@ -22,7 +23,7 @@ const Router = () => {
             <Route exact path="/home" component={Home}/>
             <Route exact path="/storyboard" component={StoryBoard}/>
             <Route exact path="/login" component={Login}/>
-            <Route exact path="/games" component={GamesList}/>
+            <Route exact path="/games" component={GamesContainer}/>
             <Route exact path="/about" component={About}/>
             <Route exact path="/astronauts" component= {UsersContainer}/>
             <Route exact path="/newgame" component= {NewGame}/>

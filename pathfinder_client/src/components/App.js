@@ -1,42 +1,36 @@
-import React from 'react'
-import Router from './Router'
+import React from "react";
+import Router from "./Router";
 
-import Navbar from './Navbar'
-import Login from './Login'
-import Registration from './Registration'
+import Navbar from "./Navbar";
+import Login from "./Login";
+import Registration from "./Registration";
 
-import ls from 'local-storage'
+import ls from "local-storage";
 
-import {connect} from 'react-redux'
+import { connect } from "react-redux";
 
-       
-
- const App = (props) => {
-let id = ls.get("user_id")
-    if (id === null || id === 'undefined' || props.users === null){ 
+const App = (props) => {
+  let id = ls.get("user_id");
+  if (id === null || id === "undefined" || props.users === null) {
     return (
-        <div>
-           <Login/>
-         <Registration/>
-       {console.log(props.users)}
+      <div>
+        <Login />
+        <Registration />
+        {console.log(props.users)}
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <Navbar />
+        <Router />
+      </div>
+    );
+  }
+};
 
-        </div>
-    )
-}
-else{
-    return ( <div>
-       
-       
-      <Navbar/>
-        <Router/>
-    </div>
-    )
-} }
+const mapStateToProps = (state) => {
+  return { users: state.users };
+};
 
-
-const mapStateToProps = state => {
-        return { users: state.users  }
-    }
-
-
-export default connect(mapStateToProps)(App)
+export default connect(mapStateToProps)(App);

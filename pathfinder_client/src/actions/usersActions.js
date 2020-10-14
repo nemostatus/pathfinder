@@ -9,7 +9,7 @@ headers: {'Content-Type': 'application/json'}
 })
     .then(resp => resp.json())
     .then(user => ls.set('user_id', user.id)) 
-    .then(user => dispatch({type: 'ADD_USER', payload: user})) 
+    .then(user => dispatch({type: 'ADD_USER', payload: "logged in"})) 
        
      
     }
@@ -24,7 +24,7 @@ body: JSON.stringify(user),
 headers: {'Content-Type': 'application/json'} })
 .then(resp => resp.json())
 .then(result => ls.set('user_id',result.user.id))
-.then(result => dispatch({type: 'ADD_USER', payload: result}))
+.then(result => dispatch({type: 'ADD_USER', payload: "logged in"}))
 .catch(err => alert("Password or username incorrect."))
 
     }}

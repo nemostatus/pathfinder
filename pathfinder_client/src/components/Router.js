@@ -1,6 +1,6 @@
 import React from 'react'
 import {Switch,Route} from 'react-router-dom'
-import Home from './Home'
+
 import NewGame from './NewGame'
 import Registration from './Registration'
 import StoryBoard from './StoryBoard'
@@ -15,7 +15,7 @@ const Router = () => {
         <Switch>
             
              <Route exact path="/registration" component={Registration}/>
-            <Route exact path="/home" component={Home}/>
+            
             <Route exact path="/storyboard" component={StoryBoard}/>
             <Route exact path="/login" component={Login}/>
             <Route exact path="/games" component={GamesContainer}/>

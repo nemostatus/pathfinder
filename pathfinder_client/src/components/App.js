@@ -12,8 +12,8 @@ import {connect} from 'react-redux'
        
 
  const App = (props) => {
-
-    if (ls.get("user_id") === null || props.users === null){ 
+let id = ls.get("user_id")
+    if (id === null || id === 'undefined' || props.users === null){ 
     return (
         <div>
            <Login/>

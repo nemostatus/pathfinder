@@ -25,6 +25,7 @@ headers: {'Content-Type': 'application/json'} })
 .then(resp => resp.json())
 .then(result => ls.set('user_id',result.user.id))
 .then(result => dispatch({type: 'ADD_USER', payload: result}))
+.catch(err => alert("Password or username incorrect."))
 
     }}
 

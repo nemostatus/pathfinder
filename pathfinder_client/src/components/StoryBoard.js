@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import {updateGame} from '../actions/gamesActions'
 import * as choices from '../choices'
 import Navbar from './Navbar'
+import {StoryPage} from './StoryPage'
 
 
 
@@ -67,25 +68,11 @@ import Navbar from './Navbar'
             <div>
                                 
                             
-           <div className = "hearts" >
-           {this.state.hearts} <i className="fas fa-heart" style={{color:"red"}}></i> 
-               </div>
-
-               <div className = "prompt" >
-           {this.state.prompt}
-           
-               </div>
-                        
-           <div id = "option1" className = "option1" onClick={this.handleClick} >
-           {this.state.choice1}
-        
-               </div>
-
-             <div id= "option2" className = "option2" onClick={this.handleClick} >
-             {this.state.choice2}
-            
-           
-               </div>
+      <StoryPage hearts = {this.state.hearts} 
+      prompt = {this.state.prompt} 
+      choice1 = {this.state.choice1} 
+      choice2 = {this.state.choice2}
+      handleClick = {this.handleClick}/>
                </div>
   )
     }

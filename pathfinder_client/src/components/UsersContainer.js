@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
-import Registration from './Registration'
 import {connect} from 'react-redux'
-import {addUser} from '../actions/usersActions'
 import {fetchUsers} from '../actions/usersActions'
-import Login from './Login'
 import UsersList from './Userslist'
-
 export class UsersContainer extends Component {
 
     componentDidMount(){

@@ -3,16 +3,13 @@ import ls from 'local-storage'
 import {connect} from 'react-redux'
 import {updateGame} from '../actions/gamesActions'
 import * as choices from '../choices'
-import Navbar from './Navbar'
 import {StoryPage} from './StoryPage'
-
-
 
  class StoryBoard extends Component {
         
        state = {
-        id: ls.get('game')["id"], //getting the level by its id to be used for rails requests
-        level: ls.get('game')["level"], //the current level changed with onclick events
+        id: ls.get('game')["id"], 
+        level: ls.get('game')["level"], 
         hearts: ls.get('game')["hearts"],
 
         user_id: ls.get('user_id'),
@@ -21,19 +18,18 @@ import {StoryPage} from './StoryPage'
         prompt: ls.get('game')["prompt"]
         }
         handleClick = ( event) => {
-     // take in the current level so when invoked it will be 
-     //have a case statement that will setState, invoke an action based on this.state.level and event.value
+     
     
      const level = this.state.level
      if(event.target.id === "option1" && level === "Asteroid Belt" ) {
-     //lose 2 hearts, change level to 2, change prompt and choice1,2
-   this.setState(choices.asteroidmanuever, () => { this.props.updateGame(this.state)}) // manuever
+   
+   this.setState(choices.asteroidmanuever, () => { this.props.updateGame(this.state)}) 
     }
      else if(event.target.id === "option2" && level === "Asteroid Belt" ){
-    this.setState(choices.asteroidbeam, () => { this.props.updateGame(this.state)}) //beam
+    this.setState(choices.asteroidbeam, () => { this.props.updateGame(this.state)}) 
 
      }
-      // end  of level 1 //////////////////////
+     
      else if(event.target.id === "option1" && level === "Ship Wreck" ) {
        this.setState(choices.shipwreckthruster, () => { this.props.updateGame(this.state)})
   }
@@ -61,14 +57,12 @@ import {StoryPage} from './StoryPage'
     }
     
 
-       
-    render() {
+     render() {
         return (
   
             <div>
                                 
-                            
-      <StoryPage hearts = {this.state.hearts} 
+     <StoryPage hearts = {this.state.hearts} 
       prompt = {this.state.prompt} 
       choice1 = {this.state.choice1} 
       choice2 = {this.state.choice2}

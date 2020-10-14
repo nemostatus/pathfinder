@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
- import Registration from './Registration'
+
  export default class Home extends Component {
      
  

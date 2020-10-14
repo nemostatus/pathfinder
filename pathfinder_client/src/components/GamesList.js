@@ -2,10 +2,9 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import ls from 'local-storage'
-import {deleteGame} from '../actions/gamesActions'
-import Navbar from './Navbar'
+
 import NewGame from  './NewGame'
-import GamesContainer from './GamesContainer'
+
 
 
 const GamesList = ({ games }) => {

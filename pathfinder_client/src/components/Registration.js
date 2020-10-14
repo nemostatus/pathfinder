@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import { addUser } from '../actions/usersActions'
 import { withRouter} from 'react-router'
 
-import {Link} from 'react-router-dom'
+
 
 class Registration extends Component {
 

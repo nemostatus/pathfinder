@@ -5,7 +5,7 @@ import { gameslogout } from "../actions/gamesActions";
 import { userslogout } from "../actions/usersActions";
 import { connect } from "react-redux";
 
-function Navbar(props) {
+const Navbar = props => {
   const handleLogout = () => {
     ls.clear();
     props.userslogout();

@@ -6,7 +6,7 @@ import Registration from "./Registration";
 import StoryBoard from "./StoryBoard";
 import Login from "./Login";
 import { About } from "./About";
-import Navbar from "./Navbar";
+import {Navbar} from "./Navbar";
 import UsersContainer from "./UsersContainer";
 import GamesContainer from "./GamesContainer";
 

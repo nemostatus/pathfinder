@@ -16,7 +16,7 @@ const App = (props) => {
       <div>
         <Login />
         <Registration />
-        {console.log(props.users)}
+     
       </div>
     );
   } else {

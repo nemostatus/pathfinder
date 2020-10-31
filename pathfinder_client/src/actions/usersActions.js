@@ -38,9 +38,8 @@ export const fetchUsers = () => {
 
 export const userslogout = () => {
   return (dispatch) => {
-    dispatch({ type: "RESET_STORE" });
+    dispatch({ type: "LOGOUT" });
   };
 };
 
-//redirect to homepage
-//pass in registration data to redux update the state there
+

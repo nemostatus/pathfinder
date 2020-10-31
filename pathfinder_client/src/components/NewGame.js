@@ -22,7 +22,7 @@ class NewGame extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>New Game </button>
+        <button onClick={this.handleClick}>New Game -Space Adventure! </button>
       </div>
     );
   }

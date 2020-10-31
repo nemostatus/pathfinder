@@ -3,7 +3,8 @@ import React from "react";
 export const StoryPage = (props) => {
   return (
     <div className="space">
- 
+      
+ <h1 className = "spacetitle" >Space Adventure</h1>
       <div className="hearts">
         {props.hearts} <i className="fas fa-heart" style={{ color: "red" }}></i>
       </div>

@@ -13,7 +13,7 @@ export const Navbar = props => {
   };
 
   return (
-    <div>
+    <div className="navbar">
       <Link to={"/about"} style={{ marginRight: 10 }}>
         {'About'}
       </Link>

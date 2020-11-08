@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import NewGame from "./NewGame";
 import Registration from "./Registration";
 import StoryBoard from "./StoryBoard";
+import KnightStoryBoard from "./KnightStoryBoard";
 import Login from "./Login";
 import { About } from "./About";
 import {Navbar} from "./Navbar";
@@ -14,7 +15,7 @@ const Router = () => {
   return (
     <Switch>
       <Route exact path="/registration" component={Registration} />
-
+      <Route exact path="knightstoryboard" component={KnightStoryBoard} />
       <Route exact path="/storyboard" component={StoryBoard} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/games" component={GamesContainer} />

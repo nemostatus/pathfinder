@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import ls from "local-storage";
-
+import NewKnightGame from "./NewKnightGame";
 import NewGame from "./NewGame";
 
 const GamesList = ({ games }) => {
@@ -17,9 +17,12 @@ const GamesList = ({ games }) => {
           key={game.id}
           onClick={() => ls.set("game", game)}
         >
-          <Link to={"/storyboard"} key={game.id}>
+         {if(game.level === "Asteroid Belt") <Link to={"/storyboard"} key={game.id}>
             level- {game.level}{" "}
-          </Link>
+          </Link>}
+          else if({game.level === "Damsel"}) {<Link to={"/knightstoryboard"} key={game.id}>
+            level- {game.level}{" "}
+          </Link>}
           <br />
 
           {game.hearts}

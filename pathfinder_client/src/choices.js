@@ -19,7 +19,7 @@ export const asteroidbeam = {
 /////////////////////////////////////////
 export const shipwreckthruster = {
   prompt:
-    "You turn on your thruster, blackout and end up on with 5% battery power on Plutos atmosphere.\
+    "You turn on your thruster, blackout and end up  with 5% battery power on Plutos atmosphere.\
     In the distance you see an alien craft.  ",
   choice1: "Fire !",
   choice2: "Signal alien craft.",

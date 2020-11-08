@@ -9,6 +9,7 @@ const GamesList = ({ games }) => {
   return (
     <div>
       <NewGame />
+       <NewKnightGame/>
       <h1> Click to load file </h1>
       {games.map((game) => (
         <div

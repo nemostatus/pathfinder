@@ -5,7 +5,7 @@ import ls from "local-storage";
 
 class NewKnightGame extends Component {
   state = {
-    level: "Asteroid Belt", //the current level changed with onclick events
+    level: "Damsel", //the current level changed with onclick events
     hearts: 5,
 
     user_id: ls.get("user_id"),
@@ -30,4 +30,4 @@ class NewKnightGame extends Component {
     );
   }
 }
-export default connect(null, { addGame })(NewGame);
+export default connect(null, { addGame })(NewKnightGame);

@@ -88,8 +88,23 @@ export const save = {
                   for a while. In the distance you see smoke rolling from one end of the forest. You take off on your horse but \
                   you are soon surrounded by a mysterious mist. As it clears you find yourself at a fork in the road. \
                   ",
-  choice1: "         Take left path..",
+  choice1: "   Take left path..",
   choice2: "   Take right path.",
-  level: "OldMan",
+  level: "Save",
+  hearts: 5
+}
+
+
+
+export const wizard = {
+  prompt: "                         As soon as you stop to help the old man he looks meaner and more evil but you go with your gut \
+                  and offer him some food from your pouch. As he consumes the food, he starts giggling like a madman!\
+                  He looks at you and says ' Youve done it! Youve broken the curse that wretched witch put on me.\
+                  You see I crossed her path on this very road and she cursed me to sit on this log until someone \
+                  was kind enough to help. I thought I would never be set free! Here take this for helping me \
+                  brave knight! ' You reach out to grab the potion from the old man. ",
+  choice1: "    Drink Potion!",
+  choice2: "   Take right path.",
+  level: "Wizard",
   hearts: 5
 }

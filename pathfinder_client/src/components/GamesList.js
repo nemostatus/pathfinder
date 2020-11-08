@@ -11,29 +11,29 @@ const GamesList = ({ games }) => {
       <NewGame />
        <NewKnightGame/>
       <h1> Click to load file </h1>
-      {games.map((game) => (
+      {games.map((game) => {
+        
         <div
           className="list"
           key={game.id}
-          onClick={() => ls.set("game", game)}
-        >
-         {if(game.level === "Asteroid Belt") <Link to={"/storyboard"} key={game.id}>
-            level- {game.level}{" "}
+          onClick={() => ls.set("game", game)} >
+        if({game.level === "Asteroid Belt"}) {<Link to={"/storyboard"} key={game.id}>
+            level- {game.level}
           </Link>}
           else if({game.level === "Damsel"}) {<Link to={"/knightstoryboard"} key={game.id}>
-            level- {game.level}{" "}
-          </Link>}
+            level- {game.level}
+          </Link>} 
           <br />
 
           {game.hearts}
           <i className="fas fa-heart" style={{ color: "red" }}></i>
           <br />
 
-          {/* <button onClick={deleteGame(game)} >Delete File</button>  */}
-        </div>
-      ))}
+     
+        </div>}
+      )}
     </div>
-  );
+      );
 };
 
 const mapStateToProps = (state) => {

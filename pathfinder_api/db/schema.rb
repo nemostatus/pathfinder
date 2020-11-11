@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_05_012035) do
+ActiveRecord::Schema.define(version: 2020_11_11_101750) do
 
   create_table "games", force: :cascade do |t|
     t.integer "hearts"
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 2020_10_05_012035) do
     t.string "choice1"
     t.string "choice2"
     t.string "prompt"
+    t.string "image"
+    t.string "name"
   end
 
   create_table "users", force: :cascade do |t|

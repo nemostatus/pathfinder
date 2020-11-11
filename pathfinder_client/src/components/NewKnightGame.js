@@ -8,7 +8,7 @@ class NewKnightGame extends Component {
     level: "Damsel", //the current level changed with onclick events
     hearts: 5,
     name: "Knight Adventure",
-    image: "https://pixabay.com/images/id-5380907/",
+    image: "https://cdn.pixabay.com/photo/2020/07/07/15/38/downton-abbey-5380907_960_720.jpg",
     user_id: ls.get("user_id"),
     choice1: " Continue to the forest.",
     choice2: "  Save the damsel!",

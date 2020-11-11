@@ -68,6 +68,8 @@ class StoryBoard extends Component {
           prompt={this.state.prompt}
           choice1={this.state.choice1}
           choice2={this.state.choice2}
+          name={this.state.name}
+          image={this.state.image}
           handleClick={this.handleClick}
         />
       </div>

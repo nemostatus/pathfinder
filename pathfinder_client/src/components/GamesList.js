@@ -12,17 +12,15 @@ const GamesList = ({ games }) => {
        <NewKnightGame/>
       <h1> Click to load file </h1>
       {games.map((game) => {
-        
+        return (
         <div
           className="list"
           key={game.id}
           onClick={() => ls.set("game", game)} >
-        if({game.level === "Asteroid Belt"}) {<Link to={"/storyboard"} key={game.id}>
+    {<Link to={"/storyboard"} key={game.id}>
             level- {game.level}
           </Link>}
-          else if({game.level === "Damsel"}) {<Link to={"/knightstoryboard"} key={game.id}>
-            level- {game.level}
-          </Link>} 
+         
           <br />
 
           {game.hearts}
@@ -30,7 +28,7 @@ const GamesList = ({ games }) => {
           <br />
 
      
-        </div>}
+        </div>)}
       )}
     </div>
       );

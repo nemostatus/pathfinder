@@ -10,7 +10,8 @@ class StoryBoard extends Component {
     id: ls.get("game")["id"],
     level: ls.get("game")["level"],
     hearts: ls.get("game")["hearts"],
-
+    name: ls.get("game")["name"],
+    image: ls.get("game")["image"],
     user_id: ls.get("user_id"),
     choice1: ls.get("game")["choice1"],
     choice2: ls.get("game")["choice2"],

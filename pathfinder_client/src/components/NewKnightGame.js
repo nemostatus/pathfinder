@@ -7,16 +7,15 @@ class NewKnightGame extends Component {
   state = {
     level: "Damsel", //the current level changed with onclick events
     hearts: 5,
-
+    name: "Knight Adventure",
+    image: "https://pixabay.com/images/id-5380907/",
     user_id: ls.get("user_id"),
-    choice1: " Take the shortcut.",
-    choice2: "  Enter through the main entrance.",
+    choice1: " Continue to the forest.",
+    choice2: "  Save the damsel!",
     prompt:
-      "After you put up a brave and furious struggle against the goblins you grow more and more weary and \
-      your vision grows blurry from exhaustion. As you defeat the last goblin you check on the damsel. \
-      'You foolish knight!' She shrieks. The damsel turns to reveal herself as a goblin and knocks you out with a club.\
-      You wake up to find your sword and horse have been taken and the goblins are gone! You continue toward \
-      the forest to see 2 paths. One looks like the main entrance and another is a strange looking shortcut.",
+      "You are requested by the king to save the princess stolen away in the middle of the night. You head out swiftly \
+      on your horse heading toward the mysterious forest. Right before you enter the forest you see a damsel in distress\
+      being atacked by goblins! You...",
   };
 
   handleClick = () => {

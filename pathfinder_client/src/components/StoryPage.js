@@ -2,9 +2,9 @@ import React from "react";
 
 export const StoryPage = (props) => {
   return (
-    <div className="space">
+    <div className="page" style= {{backgroundImage: `url(${props.image})`}}>
       
- <h1 className = "spacetitle" >Space Adventure</h1>
+ <h1 className = "pagetitle" >{props.name}</h1>
       <div className="hearts">
         {props.hearts} <i className="fas fa-heart" style={{ color: "red" }}></i>
       </div>

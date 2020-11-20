@@ -4,6 +4,7 @@ export const asteroidmanuever = {
   choice2: "Do nothing",
   level: "Ship Wreck",
   hearts: 3,
+  image: 'https://cdn.pixabay.com/photo/2016/05/29/09/19/space-1422642_960_720.jpg'
 };
 
 export const asteroidbeam = {
@@ -15,6 +16,7 @@ export const asteroidbeam = {
     "Have your engineer reroute power from other areas of the ship to the battery.",
   level: "Low Battery",
   hearts: 5,
+  image: 'https://cdn.pixabay.com/photo/2016/05/29/09/19/space-1422642_960_720.jpg' //copy image address
 };
 /////////////////////////////////////////
 export const shipwreckthruster = {

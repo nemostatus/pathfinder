@@ -39,6 +39,7 @@ export const updateGame = (game) => {
         prompt: game.prompt,
         choice1: game.choice1,
         choice2: game.choice2,
+        image: game.image
       }),
     })
       .then((resp) => resp.json())

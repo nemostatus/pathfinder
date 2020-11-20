@@ -24,7 +24,7 @@ class NewKnightGame extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>New Game -Knight Adventure! </button>
+        <button onClick={this.handleClick}>New Game -Knight Adventure!(In development) </button>
       </div>
     );
   }

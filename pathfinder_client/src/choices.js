@@ -26,7 +26,8 @@ export const shipwreckthruster = {
   choice1: "Fire !",
   choice2: "Signal alien craft.",
   level: "Final Decision",
-  hearts: 3,
+  image: 'https://cdn.pixabay.com/photo/2016/11/05/16/25/spaceship-1800550_960_720.jpg',
+  hearts: 3
 };
 
 export const shipwreckdonothing = {
@@ -77,11 +78,12 @@ export const finalsdecisionsignal = {
 
 export const finalsdecisionfire = {
   prompt:
-    " As your mega ultimate super beam charges up in a furious fashion you see a  \
-        flash of light sweep in your direction, you tell your crew they will be remembered. ",
+    " As your mega ultimate super beam charges up in a furious fashion you see many \
+        laser beams sweep in your direction, you tell your crew they will be remembered. ",
   choice1: "GAME ",
   choice2: "OVER",
   level: "Game Over",
+  image: 'https://cdn.pixabay.com/photo/2014/12/24/22/04/light-579290_960_720.jpg',
   hearts: 0,
 };
 

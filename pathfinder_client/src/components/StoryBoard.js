@@ -62,7 +62,7 @@ class StoryBoard extends Component {
 
   render() {
     return (
-      <div>
+      <div >
         <StoryPage
           hearts={this.state.hearts}
           prompt={this.state.prompt}
